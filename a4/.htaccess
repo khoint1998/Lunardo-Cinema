@@ -13,8 +13,7 @@ KrbVerifyKDC off
 
 # Below, replace 's1234567' with your sID and 's1234568' with your partner's sID if you have one
   
-  require user s3678755@RMIT.INTERNAL 
-  require user s1234568@RMIT.INTERNAL
+  require user s3678755@RMIT.INTERNAL
   
 # ^^ If assignments allow more partners, add more 'require user' lines
 
