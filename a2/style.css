@@ -12,11 +12,11 @@ div.nav{
   background-color: Black;
   margin-bottom: 5%;
   position: sticky;
+  text-align: center;
   top: 0;
 }
 
 header {
-
   color: #BDB76B;
   font-style: oblique;
   text-align: center;
