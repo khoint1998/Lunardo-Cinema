@@ -24,7 +24,7 @@
         <a class="menu" href="#1">ABOUT</a>
         <a class="menu" href="#2">PRICES</a>
         <a class="menu" href="#3">NOW SHOWING</a>
-        <a class="menu" href="">MORE</a>
+        <a class="menu" href="">BACK TO TOP</a>
       </nav>
       <hr>
     </div>
