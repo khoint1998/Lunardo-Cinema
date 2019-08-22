@@ -171,10 +171,18 @@ img.movie{
   flex: 50%;
 }
 
+iframe {
+   width: 95%;
+   height: 600px;
+}
+
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
   .col {
     flex: 100%;
+  }
+  iframe{
+    height: 300px;
   }
   nav{
     font-size: 110%;
@@ -197,7 +205,7 @@ div.movie-section {
 }
 
 .button {
-  background-color: Black; /* Green */
+  background-color: Black;
   border: none;
   color: #BDB76B;
   padding: 15px 32px;

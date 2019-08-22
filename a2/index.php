@@ -95,7 +95,7 @@
                  with breathtaking realism. Lunardo offer you endless
                  experiences throughout your movies. Enjoy!
               </p>
-              <iframe width=95% height="600" src="https://www.youtube.com/embed/3TOlN9dLpi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <iframe src="https://www.youtube.com/embed/3TOlN9dLpi8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
               </video>
             </p>
           </li>
