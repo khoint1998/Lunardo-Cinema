@@ -148,7 +148,7 @@
               </tr>
               <tr>
                 <td>First Class Concession</td>
-                <td>FCB</td>
+                <td>FCP</td>
                 <td>22.50</td>
                 <td>27.00</td>
               </tr>
