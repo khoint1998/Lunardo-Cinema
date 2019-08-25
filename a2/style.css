@@ -244,7 +244,7 @@ div.plot-title{
 }
 
 .button {
-  background-color: Black;
+  background-color: Black; /* Green */
   border: none;
   color: #BDB76B;
   padding: 15px 32px;
