@@ -21,10 +21,10 @@
     <div class="nav">
       <hr>
       <nav>
-        <a  href="#1">ABOUT</a>
-        <a  href="#2">PRICES</a>
-        <a  href="#3">NOW SHOWING</a>
-        <a  href="#top">TOP</a>
+        <a href="#1">ABOUT</a>
+        <a href="#2">PRICES</a>
+        <a href="#3">NOW SHOWING</a>
+        <a href="#top">TOP</a>
       </nav>
       <hr>
     </div>
