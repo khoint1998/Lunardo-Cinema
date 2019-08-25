@@ -69,13 +69,12 @@ main {
   background-color: Black;
 }
 
-div.nav a{
+div.nav a {
   margin-left: 2%;
   margin-right: 2%;
   color: #BDB76B;
   text-decoration: none;
   font-style: italic oblique;
-  /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 img.cinema1{
@@ -123,6 +122,7 @@ div.section{
   text-decoration: underline;
   background-color: Black;
   padding: 1.5%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 p {
@@ -160,29 +160,37 @@ img.movie{
   margin-right: 3%
 }
 
-/* Container for flexboxes */
 .row {
   display: flex;
   flex-wrap: wrap;
 }
-
-/* Create four equal columns */
 .col {
   flex: 50%;
 }
 
 iframe {
-   width: 95%;
+   width: 95%;S
    height: 600px;
 }
 
-/* On screens that are 992px wide or less, go from four columns to two columns */
+iframe.trailer{
+  width: 50%;
+  height: 300px;
+  margin-top: 5%;
+  float: right;
+}
+
+
 @media screen and (max-width: 992px) {
   .col {
     flex: 100%;
   }
   iframe{
-    height: 210px;
+    width: 300px;
+    height: 200px;
+  }
+  iframe.trailer{
+    height: 100px;
   }
   nav{
     font-size: 110%;
@@ -194,14 +202,45 @@ iframe {
     width: 15%;
   }
 }
+button.hours{
+  display: inline;
+  border-color: #BDB76B;
+  border-style: groove;
+  padding: 1%;
+  border-radius: 20px;
+}
 
-div span {
+button.hours:hover{
+  background-color: Black;
+  color: #BDB76B;
+}
+div.info span {
   color: red;
   margin-left: 5%;
 }
 
+div.info {
+  font-weight: bold;
+  margin-top: 5%;
+  color: #BDB76B;
+}
+
 div.movie-section {
   margin: 2%;
+}
+
+div.plot{
+  width: 350px;
+}
+
+div.details{
+  margin-right: 4%;
+  margin-left: 2%;
+}
+div.plot-title{
+    font-weight: bold;
+    margin-top: 5%;
+    color: #BDB76B;
 }
 
 .button {

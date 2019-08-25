@@ -14,7 +14,7 @@
   <body class="parallax">
 
     <div class="head">
-      <header>Lunardo Cinema&copy;</header>
+      <header id="top">Lunardo Cinema&copy;</header>
       <h1>Welcome to Lunardo Grand Cinema</h1>
     </div>
 
@@ -24,7 +24,7 @@
         <a  href="#1">ABOUT</a>
         <a  href="#2">PRICES</a>
         <a  href="#3">NOW SHOWING</a>
-        <a  href="">TOP</a>
+        <a  href="#top">TOP</a>
       </nav>
       <hr>
     </div>
@@ -235,6 +235,26 @@
         </div>
       </section>
       <hr>
+      <section>
+        <div class="section">Movie Details:</div>
+        <div class="details">
+          <div class="info">AVENGER: ENDGAME <span>G</span></div>
+          <iframe class="trailer" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <p>
+            <div class="plot-title">PLOT DESCRIPTION:</div>
+            <div class="plot">
+              Whatever it takes. Watch the brand-new trailer for Marvel Studios’ Avengers: Endgame.
+            </div>
+            <div class="plot-title">In theaters April 26.</div>
+            <div class="plot-title">Make a Booking:</div>
+            <button class="hours" type="button" name="choose">Wed - 12pm</button>
+            <button class="hours" type="button" name="choose">Wed - 12pm</button>
+            <button class="hours" type="button" name="choose">Wed - 12pm</button>
+            <button class="hours" type="button" name="choose">Wed - 12pm</button>
+            <button class="hours" type="button" name="choose">Wed - 12pm</button>
+          </p>
+        </div>
+      </section>
     </main>
 
     <footer>
