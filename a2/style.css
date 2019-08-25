@@ -5,7 +5,15 @@ body {
 
 div.head{
   background-color: Black;
-  margin-bottom: 5%;
+  margin-bottom: 15%;
+}
+
+img.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 35px;
+  margin: 1%;
+  vertical-align: middle;
 }
 
 div.nav{
@@ -25,7 +33,7 @@ header {
 h1{
   text-align: center;
   color: #BDB76B;
-  margin-bottom: 15%
+
 }
 
 nav {
