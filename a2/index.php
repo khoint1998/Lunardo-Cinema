@@ -14,7 +14,7 @@
   <body class="parallax">
 
     <div class="head">
-      <header id="top"><span><img src="../../media/logo.png" alt="logo"></span>Lunardo Cinema&copy;</header>
+      <header id="top"><span><img class="logo" src="../../media/logo.png" alt="logo"></span>Lunardo Cinema&copy;</header>
       <h1>Welcome to Lunardo Grand Cinema</h1>
     </div>
 
