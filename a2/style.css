@@ -133,8 +133,9 @@ div.Features {
 div.section{
   color: #BDB76B;
   text-decoration: underline;
+  font-weight: bold;
   background-color: Black;
-  padding: 3%;
+  padding: 2%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -239,7 +240,7 @@ div.info {
 }
 
 div.movie-section {
-  margin: 5%;
+  margin: 3%;
 }
 
 div.plot{
