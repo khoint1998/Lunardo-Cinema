@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-size: 200%;
   box-sizing: border-box;
@@ -130,7 +134,7 @@ div.section{
   color: #BDB76B;
   text-decoration: underline;
   background-color: Black;
-  padding: 1.5%;
+  padding: 3%;
   font-family: Arial, Helvetica, sans-serif;
 }
 
