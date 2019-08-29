@@ -4,7 +4,7 @@ body {
 }
 
 div.head{
-  background-color: Black;
+  background-color: rgba(0, 0, 0, 0.30);
   margin-bottom: 15%;
 }
 
@@ -55,7 +55,7 @@ section {
   margin-right: 2%;
   border-radius: 10px;
   background-color: white;
-  color: Black;
+  color: rgba(0, 0, 0, 0.74);
 }
 
 
@@ -74,7 +74,7 @@ section {
 }
 
 main {
-  background-color: Black;
+  background-color: rgba(0, 0, 0, 0.74);
 }
 
 div.nav a {
@@ -114,8 +114,8 @@ img.stdseat:hover{
 div.about {
   color: #BDB76B;
   font-style:oblique;
-  font-weight: bold;
   margin-bottom: 3%;
+  font-weight: bold;
   margin-top: 3%;
   text-decoration: underline;
 }
@@ -235,7 +235,7 @@ div.info {
 }
 
 div.movie-section {
-  margin: 2%;
+  margin: 5%;
 }
 
 div.plot{
@@ -253,7 +253,7 @@ div.plot-title{
 }
 
 .button {
-  background-color: Black; /* Green */
+  background-color: Black;
   border: none;
   color: #BDB76B;
   padding: 15px 32px;
