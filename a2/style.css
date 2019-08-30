@@ -105,14 +105,21 @@ img.stdseat{
   float: left;
   clear: both;
   width:30%;
-  height:30%;
+  height:20%;
   margin-left:2%;
   margin-right: 4%;
+  border-color: #BDB76B;
+  border-style: groove;
+  border-radius: 30px;
   transition: 0.25s;
 }
 
 img.stdseat:hover{
     width: 35%;
+}
+
+div.time {
+  margin: 1%;
 }
 
 div.about {
