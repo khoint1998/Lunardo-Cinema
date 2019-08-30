@@ -258,7 +258,12 @@
     </main>
 
     <footer>
-      <div>&copy;<script>
+      <div class="footer">
+        <div>&copy;Khoi Nguyen</div>
+        <div>Phone: (+61)123456789</div>
+        <div>Email: khoi.nt1998@gmail.com</div>
+      </div>
+      <script>
         document.write(new Date().getFullYear());
       </script> Khoi Nguyen s3678755. Last modified <?= date ("Y F d  H:i", filemtime($_SERVER['SCRIPT_FILENAME'])); ?>.</div>
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
