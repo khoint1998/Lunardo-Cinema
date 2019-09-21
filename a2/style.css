@@ -92,11 +92,11 @@ div.nav a {
 }
 
 div.nav a:hover{
-  text-shadow: 3px 3px #fff41f;
+  text-shadow: 1px 1px 2px #FC0, 0 0 1em #FC0, 0 0 0.2em #FC0;
 }
 
 a.active {
-  text-shadow: 3px 3px #fff41f;
+  text-shadow: 1px 1px 2px #FC0, 0 0 1em #FC0, 0 0 0.2em #FC0;
 }
 
 img.cinema1{
