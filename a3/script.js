@@ -268,7 +268,7 @@ window.onscroll = function() {
   var articles = document.getElementsByTagName('main')[0].getElementsByTagName('section');
   var navlinks = document.getElementsByTagName('nav')[0].getElementsByTagName('a');
   var n = -1;
-  while (n < articles.length -2 && articles[n+1].offsetTop <= window.scrollY){
+  while (n < articles.length -1 && articles[n+1].offsetTop <= window.scrollY + 80){
     n++;
   }
   for (var a = 0; a < navlinks.length; a++){
