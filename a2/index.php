@@ -8,6 +8,7 @@
     <!-- Keep wireframe.css for debugging, add your css to style.css -->
     <link id='wireframecss' type="text/css" rel="stylesheet" href="../wireframe.css" disabled>
     <link id='stylecss' type="text/css" rel="stylesheet" href="style.css">
+    <script src='../a3/script.js'></script>
     <script src='../wireframe.js'></script>
   </head>
 
@@ -20,19 +21,8 @@
 
     <div class="nav">
       <hr>
-      <nav>
-        <a href="#1">ABOUT</a>
-        <a href="#2">PRICES</a>
-        <a href="#3">NOW SHOWING</a>
-        <a href="#top">TOP</a>
-      </nav>
-      <hr>
-    </div>
-
-    <main>
-      <hr>
-      <section id="1">
-        <div class="section">About the new Lunardo:</div>
+      <section id="about">
+        <div class="section">ABOUT THE NEW LUNARDO:</div>
         <ul>
           <li>
             <div class="about">
@@ -102,8 +92,8 @@
         </ul>
       </section>
       <hr>
-      <section id="2">
-        <div class="section">Get Price Reduced!</div>
+      <section id="seat-prices">
+        <div class="section">SEAT PRICES</div>
         <ul>
           <li>
             <div class="about">
@@ -118,43 +108,38 @@
             <table id="price">
               <tr>
                 <th>Seat Type</th>
-                <th>Seat Code</th>
-                <th>All day (Mon. to Wed.)</th>
-                <th>Other items</th>
+                <th>
+                  <div>All day (Mon and Wed)</div>
+                  <div> and 12PM on Weekdays</div></th>
+                <th>All other times</th>
               </tr>
               <tr>
                 <td>Standard Adult</td>
-                <td>STA</td>
                 <td>14.00</td>
                 <td>19.80</td>
               </tr>
               <tr>
                 <td>Standard Concession</td>
-                <td>STP</td>
                 <td>12.50</td>
                 <td>17.50</td>
               </tr>
               <tr>
                 <td>Standard Child</td>
-                <td>STC</td>
                 <td>11.00</td>
                 <td>15.30</td>
               </tr>
               <tr>
                 <td>First Class Adult</td>
-                <td>FCA</td>
                 <td>24.00</td>
                 <td>30.00</td>
               </tr>
               <tr>
                 <td>First Class Concession</td>
-                <td>FCP</td>
                 <td>22.50</td>
                 <td>27.00</td>
               </tr>
               <tr>
                 <td>First Class Child</td>
-                <td>FCC</td>
                 <td>21.00</td>
                 <td>24.00</td>
               </tr>
@@ -163,8 +148,8 @@
         </ul>
       </section>
       <hr>
-      <section id="3">
-        <div class="section">Now Showing:</div>
+      <section id="movie">
+        <div class="section">NOW SHOWING</div>
         <div class="row">
           <div class="col">
             <div class="movie-section">
@@ -172,12 +157,12 @@
               <div class="info">
                 Top End Wedding <span>G</span>
               </div>
-              <div class="">
+              <div id="topEndWeddingTime" class="time">
                 <li>Mon - 6pm</li>
                 <li>Tue - 6pm</li>
                 <li>Sat - 3pm</li>
                 <li>Sun - 3pm</li>
-                <button class="button" type="button" name="choose"> SELECT</button>
+                <button class="button" type="button" name="choose" onclick="showSynopsis(1)"> SELECT</button>
               </div>
             </div>
           </div>
@@ -187,16 +172,15 @@
               <div class="info">
                 Avenger: Endgame<span>G</span>
               </div>
-              <div class="">
+              <div id="avenger4Time" class="time">
                 <li>Wed - 9pm</li>
                 <li>Thu - 9pm</li>
                 <li>Fri - 9pm</li>
                 <li>Sat - 6pm</li>
                 <li>Sun - 6pm</li>
-                <button class="button" type="button" name="choose"> SELECT</button>
+                <button class="button" type="button" name="choose" onclick="showSynopsis(2)"> SELECT</button>
               </div>
             </div>
-
           </div>
           <div class="col">
             <div class="movie-section">
@@ -204,7 +188,7 @@
               <div class="info">
                 Dumbo <span>G</span>
               </div>
-              <div class="">
+              <div id="dumboTime" class="time">
                 <li>Mon - 12pm</li>
                 <li>Tue - 12pm</li>
                 <li>Wed - 6pm</li>
@@ -212,7 +196,7 @@
                 <li>Fri - 6pm</li>
                 <li>Sat - 12pm</li>
                 <li>Sun - 12pm</li>
-                <button class="button" type="button" name="choose"> SELECT</button>
+                <button class="button" type="button" name="choose" onclick="showSynopsis(3)"> SELECT</button>
               </div>
             </div>
           </div>
@@ -222,39 +206,20 @@
               <div class="info">
                 The Happy Prince <span>G</span>
               </div>
-              <div class="">
+              <div id="happyPrinceTime" class="time">
                 <li>Wed - 12pm</li>
                 <li>Thu - 12pm</li>
                 <li>Fri - 12pm</li>
                 <li>Sat - 9pm</li>
                 <li>Sun - 9pm</li>
-                <button class="button" type="button" name="choose"> SELECT</button>
+                <button class="button" type="button" name="choose" onclick="showSynopsis(4)"> SELECT</button>
               </div>
             </div>
           </div>
         </div>
       </section>
       <hr>
-      <section>
-        <div class="section">Movie Details:</div>
-        <div class="details">
-          <div class="info">AVENGER: ENDGAME <span>G</span></div>
-          <iframe class="trailer" src="https://www.youtube.com/embed/TcMBFSGVi1c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <p>
-            <div class="plot-title">PLOT DESCRIPTION:</div>
-            <div class="plot">
-              Whatever it takes. Watch the brand-new trailer for Marvel Studios’ Avengers: Endgame.
-            </div>
-            <div class="plot-title">In theaters April 26.</div>
-            <div class="plot-title">Make a Booking:</div>
-            <button class="hours" type="button" name="choose">Wed - 12pm</button>
-            <button class="hours" type="button" name="choose">Wed - 12pm</button>
-            <button class="hours" type="button" name="choose">Wed - 12pm</button>
-            <button class="hours" type="button" name="choose">Wed - 12pm</button>
-            <button class="hours" type="button" name="choose">Wed - 12pm</button>
-          </p>
-        </div>
-      </section>
+      <section id="now-showing"></section>
     </main>
 
     <footer>
