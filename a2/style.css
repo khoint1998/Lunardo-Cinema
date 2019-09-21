@@ -155,7 +155,7 @@ div.section{
   font-weight: bold;
   background-color: Black;
   padding: 3.5%;
-  text-shadow: 1px 1px #ffffff;
+  text-shadow: 1px 1px 2px #FC0, 0 0 1em #FC0, 0 0 0.2em #FC0;
 }
 
 p {
