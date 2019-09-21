@@ -13,13 +13,23 @@
   </head>
 
   <body class="parallax">
-
     <div class="head">
       <header id="top"><span><img class="logo" src="../../media/logo.png" alt="logo"></span>Lunardo Cinema&copy;</header>
       <h1>Welcome to Lunardo Grand Cinema</h1>
     </div>
 
     <div class="nav">
+      <hr>
+      <nav>
+        <a href="#about">ABOUT</a>
+        <a href="#seat-prices">PRICES</a>
+        <a href="#movie">NOW SHOWING</a>
+        <a href="#top">HOME</a>
+      </nav>
+      <hr>
+    </div>
+
+    <main>
       <hr>
       <section id="about">
         <div class="section">ABOUT THE NEW LUNARDO:</div>
