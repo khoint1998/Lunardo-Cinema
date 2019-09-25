@@ -1,4 +1,3 @@
-/* Insert your javascript here */
 var price = {
   sta: {d: 14.00, n: 19.80},
   stp: {d: 12.50, n: 17.50},
@@ -248,7 +247,7 @@ function bookingForm(id){
       </div>
       <div class="form-std">
         <label for="expiry">Expiry: </label>
-        <input type="month" placeholder="MM/YYYY" name="cust[expiry]" value="" id="cust-expiry" required>
+        <input type="month" placeholder="MM/YYYY" name="cust[expiry]" min="" max="2020-09" value="" id="cust-expiry" required>
       </div>
       <div id="total-price" class="form-std">
         <label for="total">TOTAL: $</label>
@@ -261,6 +260,7 @@ function bookingForm(id){
     </div>
   </form>
   `)
+  dateCheck();
   movieAndDateChosenUpdate(id);
 }
 
@@ -348,4 +348,15 @@ function calcPrice(){
               document.getElementById('seats-FCC').value * price.fcc.n;
     document.getElementById('total').value = parseFloat(totalAmt).toFixed(2);
   }
+}
+
+function dateCheck() {
+  var today = new Date();
+  var mm = today.getMonth()+1; //January is 0
+  var yyyy = today.getFullYear();
+      if(mm<10){
+          mm='0'+mm
+      }
+  today = yyyy+'-'+mm;
+  document.getElementById("cust-expiry").setAttribute("min", today);
 }
