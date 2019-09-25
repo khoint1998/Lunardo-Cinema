@@ -195,7 +195,7 @@ function bookingForm(id){
         <div class="form-std">
           <label for="std-concession">Concession: </label>
           <select name="seats[FCP]" id="seats-FCP" onchange="calcPrice()">
-            <option value="0">Please Select</option>
+            <option value="">Please Select</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
@@ -211,7 +211,7 @@ function bookingForm(id){
         <div class="form-std">
           <label for="std-children">Children: </label>
           <select name="seats[FCC]" id="seats-FCC" onchange="calcPrice()">
-            <option value="0">Please Select</option>
+            <option value="">Please Select</option>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
