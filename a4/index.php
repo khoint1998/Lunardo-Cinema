@@ -90,7 +90,7 @@
     if($_POST['cust[expiry]'] != date("Y-m")) {
       $expiry = $_POST['cust[expiry]']
     } else {
-      $expiryError = "Expiry cannot be at the same month"
+      $expiryError = "Expiry cannot be at the same month";
     }
   }
 ?>
