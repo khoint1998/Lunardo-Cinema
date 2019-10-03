@@ -75,7 +75,7 @@
     if(empty($_POST['cust[email]'])) {
       $email = $_POST['cust[email]'];
     } else {
-      $emailError = 'Email invalid. Please check again'
+      $emailError = 'Email invalid. Please check again';
     }
     if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust[phone]']) ) {
       $phone = $_POST['cust[phone]'];
