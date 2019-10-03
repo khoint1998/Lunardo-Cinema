@@ -462,3 +462,7 @@ label {
   color: #BDB76B;
   text-shadow: 0.5px 0.5px #ff4000;
 }
+
+#debug-section {
+  background: white;
+}
