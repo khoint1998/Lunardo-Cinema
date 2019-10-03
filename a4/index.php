@@ -6,6 +6,55 @@
   $phoneError = '';
   $cardError = '';
   $expiryError = '';
+
+  $moviesObject = [
+    'ACT' => [
+      'title' => 'Avengers: Endgame',
+      'rating' => 'G',
+      'description' => '<p>With the help of remaining allies. Whatever it takes. Watch the brand-new trailer from Marvel Studios’ Avengers: Endgame.</p>',
+      'screenings' => [
+        'SUN' => 'T18',
+        'SAT' => 'T18',
+        'FRI' => 'T21',
+        'THU' => 'T21',
+        'WED' => 'T21',
+      ]
+    ],
+    'RMC' => [
+      'title' => 'Top End Wedding',
+      'rating' => 'G',
+      'description' => '<p>From the makers of The Sapphires, TOP END WEDDING is a celebration of love, family and belonging, set against the spectacular natural beauty of the Northern Territory.</p>',
+      'screenings' => [
+        'SUN' => 'T15',
+        'SAT' => 'T15',
+        'TUE' => 'T18',
+        'MON' => 'T18'
+    ],
+    'ANM' => [
+      'title' => 'Dumbo',
+      'rating' => 'G',
+      'description' => '<p>Circus owner Max Medici enlists former star Holt Farrier and his children Milly and Joe to care for a newborn elephant whose oversized ears make him a laughingstock in an already struggling circus. But when they discover that Dumbo can fly.</p>',
+      'screenings' => [
+        'SUN' => 'T12',
+        'SAT' => 'T12',
+        'FRI' => 'T18',
+        'THU' => 'T18',
+        'WED' => 'T18',
+        'TUE' => 'T12',
+        'MON' => 'T12'
+    ],
+    'AHF' => [
+      'title' => 'The Happy Prince',
+      'rating' => 'G',
+      'description' => '<p>The untold story of the last days in the tragic times of Oscar Wilde, a person who observes his own failure with ironic distance and regards the difficulties that beset his life with detachment and humor.</p>',
+      'screenings' => [
+        'SUN' => 'T21',
+        'SAT' => 'T21',
+        'FRI' => 'T12',
+        'THU' => 'T12',
+        'WED' => 'T12'
+    ],
+  ];
 ?>
 <!DOCTYPE html>
 <html lang='en'>
