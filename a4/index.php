@@ -29,6 +29,7 @@
         'SAT' => 'T15',
         'TUE' => 'T18',
         'MON' => 'T18'
+      ]
     ],
     'ANM' => [
       'title' => 'Dumbo',
@@ -42,6 +43,7 @@
         'WED' => 'T18',
         'TUE' => 'T12',
         'MON' => 'T12'
+      ]
     ],
     'AHF' => [
       'title' => 'The Happy Prince',
@@ -53,6 +55,7 @@
         'FRI' => 'T12',
         'THU' => 'T12',
         'WED' => 'T12'
+      ]
     ],
   ];
 ?>
