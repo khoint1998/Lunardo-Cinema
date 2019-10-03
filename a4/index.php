@@ -66,31 +66,28 @@
   ];
 
   $errorFound = false;
-  if(!empty($_POST)){
-    if(empty($_POST['seat[STA]']) || empty($_POST['seat[STP]']) || empty($_POST['seat[STC]']) || empty($_POST['seat[FCA]']) || empty($_POST['seat[FCP]']) || empty($_POST['seat[FCC]'])){
-
-    }
-    if (preg_match("#^[A-Za-z .\\-']{1,50}#", $_POST['cust[name]']) ){
+  if(!empty($_POST)) {
+    if (preg_match("#^[A-Za-z .\\-']{1,50}#", $_POST['cust[name]']) ) {
       $name = $_POST['cust[name]'];
     } else {
       $nameError = 'Name invalid. Please check again';
     }
-    if(empty($_POST['cust[email]'])){
+    if(empty($_POST['cust[email]'])) {
       $email = $_POST['cust[email]'];
     } else {
       $emailError = 'Email invalid. Please check again'
     }
-    if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust[phone]']) ){
+    if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust[phone]']) ) {
       $phone = $_POST['cust[phone]'];
     } else {
       $phoneError = 'Phone invalid. Please check again';
     }
-    if (preg_match("#^\\d( ?\\d){14,19}#", $_POST['cust[card]']) ){
+    if (preg_match("#^\\d( ?\\d){14,19}#", $_POST['cust[card]']) ) {
       $card = $_POST['cust[card]'];
     } else {
       $cardError = 'Credit card invalid. Please check again';
     }
-    if($_POST['cust[expiry]'] != date("Y-m")){
+    if($_POST['cust[expiry]'] != date("Y-m")) {
       $expiry = $_POST['cust[expiry]']
     } else {
       $expiryError = "Expiry cannot be at the same month"
