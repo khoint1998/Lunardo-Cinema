@@ -259,12 +259,7 @@
       preShow($_POST);
       preShow($_SESSION);
       echo "<hr>";
-      $filename = "index.php";
-      $lines = file($filename);
-      echo "<ol>";
-      foreach($lines as $i => $line)
-        echo "<li>htmlentities($line)</li>";
-      echo "</ol>";
+      printMyCode();
     ?>
   </body>
 </html>
