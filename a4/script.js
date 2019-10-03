@@ -8,6 +8,7 @@ var price = {
 };
 
 var date = new Date();
+$message='Hello';
 
 function showSynopsis(sw){
   removeContentById('now-showing');
@@ -232,6 +233,7 @@ function bookingForm(id){
       <div class="form-std">
         <label for="name">Name: </label>
         <input type="text"  placeholder="eg.John" name="cust[name]" value="" id="cust-name" pattern="^[A-Za-z .\\-']{1,50}" title="Name cannot exceeds 50 characters, no number input" required>
+        <?php echo $message; ?>
       </div>
       <div class="form-std">
         <label for="email">Email: </label>
