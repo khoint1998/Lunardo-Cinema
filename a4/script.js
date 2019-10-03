@@ -116,7 +116,7 @@ function bookingForm(id){
   document.querySelector("#booking-form").insertAdjacentHTML('afterbegin',
   `
   <form id="form" method='post' target='_blank'
-  action='index.php'
+  action='inde.php'
   onsubmit="">
     <div class="form-title">
       <span id="form-movie-id">Movie Title</span> - <span id="form-movie-day">Date</span> - <span id="form-movie-hour">Time</span>
