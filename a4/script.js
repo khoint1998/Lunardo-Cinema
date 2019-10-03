@@ -255,6 +255,7 @@ function bookingForm(id){
       </div>
     </div>
     <div class="order-button">
+      <p id="server-message"></p>
       <p id="discount-message"></p>
       <button type="submit" name="order" value="order">ORDER</button>
     </div>

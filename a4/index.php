@@ -1,3 +1,12 @@
+<?php
+  include_once('./tools.php');
+  $message='';
+  $nameError = '';
+  $emailError = '';
+  $phoneError = '';
+  $cardError = '';
+  $expiryError = '';
+?>
 <!DOCTYPE html>
 <html lang='en'>
   <head>
@@ -245,5 +254,17 @@
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
 
+    <?php
+      echo "<hr>";
+      preShow($_POST);
+      preShow($_SESSION);
+      echo "<hr>";
+      $filename = "index.php";
+      $lines = file($filename);
+      echo "<ol>";
+      foreach($lines as $i => $line)
+        echo "<li>$line</li>";
+      echo "</ol>";
+    ?>
   </body>
 </html>
