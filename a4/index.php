@@ -254,15 +254,13 @@
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
 
-    <p id="debug-section">
-      <?php
-        echo "<hr>";
-        preShow($_POST);
-        preShow($_SESSION);
-        echo "<hr>";
-        printMyCode();
-      ?>
-    </p>
-    
+    <?php
+      echo "<hr>";
+      preShow($_POST);
+      preShow($_SESSION);
+      echo "<hr>";
+      printMyCode();
+    ?>
+
   </body>
 </html>

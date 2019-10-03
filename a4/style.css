@@ -463,6 +463,6 @@ label {
   text-shadow: 0.5px 0.5px #ff4000;
 }
 
-#debug-section {
-background-color: white;
+pre {
+  background-color: white;
 }
