@@ -263,7 +263,7 @@
       $lines = file($filename);
       echo "<ol>";
       foreach($lines as $i => $line)
-        echo "<li>$line</li>";
+        echo "<li>htmlentities($line)</li>";
       echo "</ol>";
     ?>
   </body>
