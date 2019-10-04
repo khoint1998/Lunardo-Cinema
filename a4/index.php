@@ -584,23 +584,23 @@
       <div class="form-section">
         <div class="form-std">
           <label for="name">Name: </label>
-          <input type="text"  placeholder="eg.John" name="cust[name]" value="" id="cust-name" pattern="^[A-Za-z .\\-']{1,50}" title="Name cannot exceeds 50 characters, no number input" required>
+          <input type="text"  placeholder="eg.John" name="cust[name]" value="<?php $name; ?>" id="cust-name" pattern="^[A-Za-z .\\-']{1,50}" title="Name cannot exceeds 50 characters, no number input" required>
         </div>
         <div class="form-std">
           <label for="email">Email: </label>
-          <input type="email" placeholder="example@eg.com" name="cust[email]" value="" id="cust-email" required>
+          <input type="email" placeholder="example@eg.com" name="cust[email]" value="<?php $email; ?>" id="cust-email" required>
         </div>
         <div class="form-std">
           <label for="mobile">Mobile: </label>
-          <input type="tel" placeholder="eg.0412345678" name="cust[mobile]" value="" id="cust-mobile" pattern="^(\\(04\\)|04|\\+614)( ?\\d){8}" title="Australia phone number required" required>
+          <input type="tel" placeholder="eg.0412345678" name="cust[mobile]" value="<?php $mobile; ?>" id="cust-mobile" pattern="^(\\(04\\)|04|\\+614)( ?\\d){8}" title="Australia phone number required" required>
         </div>
         <div class="form-std">
           <label for="credit-card">Credit Card: </label>
-          <input type="text" placeholder="XXXX XXXX XXXX XXXX" name="cust[card]" value="" id="cust-card" pattern="^[0-9 ]{14,19}" title="Input must between 14-16 characters, and all must be numbers" required>
+          <input type="text" placeholder="XXXX XXXX XXXX XXXX" name="cust[card]" value="<?php $card; ?>" id="cust-card" pattern="^[0-9 ]{14,19}" title="Input must between 14-16 characters, and all must be numbers" required>
         </div>
         <div class="form-std">
           <label for="expiry">Expiry: </label>
-          <input type="month" placeholder="MM/YYYY" name="cust[expiry]" min="" max="2020-09" value="" id="cust-expiry" required>
+          <input type="month" placeholder="MM/YYYY" name="cust[expiry]" min="" max="" value="<?php $expiry; ?>" id="cust-expiry" required>
         </div>
         <div id="total-price" class="form-std">
           <label for="total">TOTAL: $</label>
@@ -712,7 +712,9 @@
             mm='0'+mm
         }
     today = yyyy+'-'+mm;
+    todayNextyear = (yyyy+1)+'-'+mm;
     document.getElementById("cust-expiry").setAttribute("min", today);
+    document.getElementById("cust-expiry").setAttribute("max", todayNextyear);
   }
   </script>
 
