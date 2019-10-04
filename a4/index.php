@@ -3,13 +3,13 @@
   $message='';
   $nameError = '';
   $emailError = '';
-  $phoneError = '';
+  $mobileError = '';
   $cardError = '';
   $expiryError = '';
 
   $name ='';
   $email='';
-  $phone='';
+  $mobile='';
   $card='';
   $expiry='';
 
@@ -77,10 +77,10 @@
     } else {
       $emailError = 'Email invalid. Please check again';
     }
-    if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust'][['phone']]) ) {
-      $phone = $_POST['cust']['phone'];
+    if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust'][['mobile']]) ) {
+      $mobile = $_POST['cust']['phone'];
     } else {
-      $phoneError = 'Phone invalid. Please check again';
+      $mobileError = 'Phone invalid. Please check again';
     }
     if (preg_match("#^\\d( ?\\d){14,19}#", $_POST['cust'][['card']]) ) {
       $card = $_POST['cust'][['card']];
