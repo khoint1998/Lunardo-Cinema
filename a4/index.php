@@ -67,7 +67,7 @@
 
   $errorFound = false;
   if(!empty($_POST)) {
-    if (preg_match("#^[A-Za-z .\\-']{1,50}#", $_POST['cust']['name']) ) {
+    if (preg_match("#^[A-Za-z .\\-']{1,50}#", $_POST['cust']['name'])) {
       $name = $_POST['cust']['name'];
     } else {
       $nameError = 'Name invalid. Please check again';
