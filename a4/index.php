@@ -73,17 +73,17 @@
       $nameError = 'Name invalid. Please check again';
     }
     if(empty($_POST['cust']['email'])) {
-      $email = $_POST['cust'][['email']];
+      $email = $_POST['cust']['email'];
     } else {
       $emailError = 'Email invalid. Please check again';
     }
-    if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust'][['mobile']]) ) {
+    if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust']['mobile'])) {
       $mobile = $_POST['cust']['mobile'];
     } else {
-      $mobileError = 'Phone invalid. Please check again';
+      $mobileError = 'Mobile invalid. Please check again';
     }
-    if (preg_match("#^\\d( ?\\d){14,19}#", $_POST['cust'][['card']]) ) {
-      $card = $_POST['cust'][['card']];
+    if (preg_match("#^\\d( ?\\d){14,19}#", $_POST['cust']['card'])) {
+      $card = $_POST['cust']['card'];
     } else {
       $cardError = 'Credit card invalid. Please check again';
     }
