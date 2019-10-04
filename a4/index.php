@@ -78,7 +78,7 @@
       $emailError = 'Email invalid. Please check again';
     }
     if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust'][['mobile']]) ) {
-      $mobile = $_POST['cust']['phone'];
+      $mobile = $_POST['cust']['mobile'];
     } else {
       $mobileError = 'Phone invalid. Please check again';
     }
