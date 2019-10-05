@@ -1,5 +1,14 @@
 <?php
   // session_start();
+  if (!$_SESSION){
+    session_start();
+    $_SESSION['id'] = 1;
+    echo "Session has been initiated at index.php and id is =". $_SESSION['id'];
+  } else {
+      session_start();
+      $_SESSION['id']++;
+      echo "The session id is  : ".$_SESSION['id'];
+  }
   include_once('./tools.php');
   $message='';
   $nameError = '';
