@@ -725,8 +725,9 @@
   }
 
   var state = document.getElementById("now-showing").innerHTML;
+  document.cookie = "state="+state;
   <?php
-    $_SESSION['state'] = state;
+    $_SESSION['state'] = $_COOKIE['state'];
   ?>
   </script>
 
