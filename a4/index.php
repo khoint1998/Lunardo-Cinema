@@ -725,7 +725,7 @@
     document.getElementById("cust-expiry").setAttribute("max", todayNextyear);
   }
 
-  var state = document.getElementById("now-showing").innerHTML;
+  var state = document.getElementById("now-showing");
   </script>
 
 </html>
