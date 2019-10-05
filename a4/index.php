@@ -1,5 +1,4 @@
 <?php
-  
   include_once('./tools.php');
   $message='';
   $nameError = '';
@@ -724,6 +723,12 @@
     document.getElementById("cust-expiry").setAttribute("min", today);
     document.getElementById("cust-expiry").setAttribute("max", todayNextyear);
   }
+
+  var state = document.getElementById("now-showing").innerHTML;
   </script>
+
+  <?php
+    $_SESSION['state'] = state;
+  ?>
 
 </html>
