@@ -94,6 +94,7 @@
       $expiryError = "Expiry cannot be at the same month";
     }
 
+    $_SESSION['hello'] = "hello world";
     // if(!$errorFound){
     //   header("Location: index.php");
     // } else {
