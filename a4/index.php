@@ -585,6 +585,7 @@
           </div>
         </fieldset>
       </div>
+      <input type="hidden" name="movie[id]" id="input-movie-id" value=state>
       <input type="hidden" name="movie[id]" id="input-movie-id" value="">
       <input type="hidden" name="movie[day]" id="input-movie-day" value="">
       <input type="hidden" name="movie[hour]" id="input-movie-hour" value="">
