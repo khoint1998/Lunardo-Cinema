@@ -725,10 +725,9 @@
   }
 
   var state = document.getElementById("now-showing").innerHTML;
-  </script>
-
   <?php
     $_SESSION['state'] = state;
   ?>
+  </script>
 
 </html>
