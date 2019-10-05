@@ -93,6 +93,12 @@
     } else {
       $expiryError = "Expiry cannot be at the same month";
     }
+
+    if(!$errorFound){
+      header("Location: index.php");
+    } else {
+      header("Location: index.php");
+    }
   }
 ?>
 <!DOCTYPE html>
