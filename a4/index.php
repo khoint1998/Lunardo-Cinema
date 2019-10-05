@@ -368,6 +368,7 @@
   };
 
   var date = new Date();
+  var state = document.getElementById("now-showing");
 
   function showSynopsis(sw){
     removeContentById('now-showing');
@@ -724,8 +725,6 @@
     document.getElementById("cust-expiry").setAttribute("min", today);
     document.getElementById("cust-expiry").setAttribute("max", todayNextyear);
   }
-
-  var state = document.getElementById("now-showing");
   </script>
 
 </html>
