@@ -94,11 +94,9 @@
     }
 
     $_SESSION['hello'] = "hello world";
-    // if(!$errorFound){
-    //   header("Location: index.php");
-    // } else {
-    //   header("Location: index.php");
-    // }
+    if(!$errorFound){
+      header("Location: receipt.php");
+    }
   }
 ?>
 <!DOCTYPE html>
