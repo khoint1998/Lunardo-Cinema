@@ -65,6 +65,14 @@
     ],
   ];
 
+  // $file = fopen("contacts.csv","w");
+  //
+  // foreach ($moviesObject as $line) {
+  // fputcsv($file, $line);
+  // }
+  //
+  // fclose($file);
+
   $errorFound = false;
   if(!empty($_POST)) {
     if (preg_match("#^[A-Za-z .\\-']{1,50}#", $_POST['cust']['name'])) {
@@ -100,7 +108,7 @@
 
     $_SESSION['hello'] = "hello world";
 
-    if(!$errorFound){
+    if(!$errorFound && !empty($_SESSION)){
       header("Location: receipt.php");
     }
   }
