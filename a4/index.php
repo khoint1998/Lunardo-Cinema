@@ -476,9 +476,7 @@
     removeContentById('booking-form');
     document.querySelector("#booking-form").insertAdjacentHTML('afterbegin',
     `
-    <form id="form" method='post' target='_blank'
-    action='index.php'
-    onsubmit="">
+    <form id="form" method='post' action='index.php' onsubmit="">
       <div class="form-title">
         <span id="form-movie-id">Movie Title</span> - <span id="form-movie-day">Date</span> - <span id="form-movie-hour">Time</span>
       </div>
@@ -586,7 +584,6 @@
           </div>
         </fieldset>
       </div>
-      <input type="hidden" name="web-state" id="web" value=`+state+`>
       <input type="hidden" name="movie[id]" id="input-movie-id" value="">
       <input type="hidden" name="movie[day]" id="input-movie-day" value="">
       <input type="hidden" name="movie[hour]" id="input-movie-hour" value="">
