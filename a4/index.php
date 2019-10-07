@@ -71,29 +71,35 @@
       $name = $_POST['cust']['name'];
     } else {
       $nameError = 'Name invalid. Please check again';
+      $errorsFound = true;
     }
     if(empty($_POST['cust']['email'])) {
       $email = $_POST['cust']['email'];
     } else {
       $emailError = 'Email invalid. Please check again';
+      $errorsFound = true;
     }
     if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust']['mobile'])) {
       $mobile = $_POST['cust']['mobile'];
     } else {
       $mobileError = 'Mobile invalid. Please check again';
+      $errorsFound = true;
     }
     if (preg_match("#^\\d( ?\\d){14,19}#", $_POST['cust']['card'])) {
       $card = $_POST['cust']['card'];
     } else {
       $cardError = 'Credit card invalid. Please check again';
+      $errorsFound = true;
     }
     if($_POST['cust']['expiry'] != date("Y-m")) {
       $expiry = $_POST['cust']['expiry'];
     } else {
       $expiryError = "Expiry cannot be at the same month";
+      $errorsFound = true; 
     }
 
     $_SESSION['hello'] = "hello world";
+
     if(!$errorFound){
       header("Location: receipt.php");
     }
