@@ -602,7 +602,7 @@
       <div class="form-section">
         <div class="form-std">
           <label for="name">Name: </label>
-          <input type="text"  placeholder="eg.John" name="cust[name]" value="<?php $name; ?>" id="cust-name" pattern="^[A-Za-z .\\-']{1,50}" title="Name cannot exceeds 50 characters, no number input" required>
+          <input type="text"  placeholder="eg.John" name="cust[name]" value="<?php $name; ?>" id="cust-name" title="Name cannot exceeds 50 characters, no number input" required>
         </div>
         <div class="form-std">
           <label for="email">Email: </label>
@@ -610,11 +610,11 @@
         </div>
         <div class="form-std">
           <label for="mobile">Mobile: </label>
-          <input type="tel" placeholder="eg.0412345678" name="cust[mobile]" value="<?php $mobile; ?>" id="cust-mobile" pattern="^(\\(04\\)|04|\\+614)( ?\\d){8}" title="Australia phone number required" required>
+          <input type="tel" placeholder="eg.0412345678" name="cust[mobile]" value="<?php $mobile; ?>" id="cust-mobile" title="Australia phone number required" required>
         </div>
         <div class="form-std">
           <label for="credit-card">Credit Card: </label>
-          <input type="text" placeholder="XXXX XXXX XXXX XXXX" name="cust[card]" value="<?php $card; ?>" id="cust-card" pattern="^[0-9 ]{14,19}" title="Input must between 14-16 characters, and all must be numbers" required>
+          <input type="text" placeholder="XXXX XXXX XXXX XXXX" name="cust[card]" value="<?php $card; ?>" id="cust-card" title="Input must between 14-16 characters, and all must be numbers" required>
         </div>
         <div class="form-std">
           <label for="expiry">Expiry: </label>
