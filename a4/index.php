@@ -77,30 +77,35 @@
   if(!empty($_POST)) {
     if (preg_match("#^[A-Za-z .\-']{1,50}#", $_POST['cust']['name'])) {
       $name = $_POST['cust']['name'];
+      $_SESSION['cust']['name'] = $_POST['cust']['name'];
     } else {
       $nameError = '<span style="color:red">Name invalid. Please check again</span>';
       $errorsFound = true;
     }
     if(empty($_POST['cust']['email'])) {
       $email = $_POST['cust']['email'];
+      $_SESSION['cust']['email'] = $_POST['cust']['email'];
     } else {
       $emailError = '<span style="color:red">Email invalid. Please check again</span>';
       $errorsFound = true;
     }
     if (preg_match("#^(\(04\)|04|\+614)( ?\d){8}#", $_POST['cust']['mobile'])) {
       $mobile = $_POST['cust']['mobile'];
+      $_SESSION['cust']['mobile'] = $_POST['cust']['mobile'];
     } else {
       $mobileError = '<span style="color:red">Mobile invalid. Please check again</span>';
       $errorsFound = true;
     }
     if (preg_match("#^\d( ?\d){14,19}#", $_POST['cust']['card'])) {
       $card = $_POST['cust']['card'];
+      $_SESSION['cust']['card'] = $_POST['cust']['card'];
     } else {
       $cardError = '<span style="color:red">Card invalid. Please check again</span>';
       $errorsFound = true;
     }
     if($_POST['cust']['expiry'] != date("Y-m")) {
       $expiry = $_POST['cust']['expiry'];
+      $_SESSION['cust']['expiry'] = $_POST['cust']['expiry'];
     } else {
       $expiryError = '<span style="color:red">Expiry cannot be at the same month this year</span>';
       $errorsFound = true;
