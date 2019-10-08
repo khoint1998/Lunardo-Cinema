@@ -81,7 +81,7 @@
       $nameError = '<span style="color:red">Name invalid. Please check again</span>';
       $errorsFound = true;
     }
-    if(empty($_POST['cust']['email'])) {
+    if(!empty($_POST['cust']['email'])) {
       $email = $_POST['cust']['email'];
     } else {
       $emailError = '<span style="color:red">Email invalid. Please check again</span>';
