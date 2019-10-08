@@ -106,7 +106,7 @@
       $errorsFound = true;
     }
 
-    // if(!$errorsFound){
+    if(!$errorsFound){
       $_SESSION['cust']['name'] = $_POST['cust']['name'];
       $_SESSION['cust']['email'] = $_POST['cust']['email'];
       $_SESSION['cust']['mobile'] = $_POST['cust']['mobile'];
@@ -123,8 +123,8 @@
       $_SESSION['movie']['hour'] = $_POST['movie']['hour'];
       $_SESSION['total'] = $_POST['total'];
       $_SESSION['order'] = $_POST['order'];
-      // header("Location: receipt.php");
-    // }
+      header("Location: receipt.php");
+    }
   }
 ?>
 <!DOCTYPE html>

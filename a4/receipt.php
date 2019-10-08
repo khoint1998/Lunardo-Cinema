@@ -1,12 +1,21 @@
 <?php
+  // include_once('./tools.php');
   if(empty($_SESSION)){
     header ('Location: index.php');
   } else {
     //create receipt
   }
-  include_once('./tools.php');
-  echo "Success";
-  preShow($_SESSION);
-  echo "<hr>";
-  printMyCode();
+?>
+<!DOCTYPE html>
+<header>
+  Thank you for your purchase!
+</header>
+<body>
+  <h1>Tax Invoice</h1>
+
+</body>
+<?php
+  // preShow($_SESSION);
+  // echo "<hr>";
+  // printMyCode();
 ?>
