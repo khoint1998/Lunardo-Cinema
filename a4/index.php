@@ -113,7 +113,7 @@
 
     $_SESSION['hello'] = "hello world";
 
-    if(!$errorFound && !empty($_SESSION)){
+    if($errorFound == false && !empty($_SESSION)){
       header("Location: receipt.php");
     }
   }
