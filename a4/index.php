@@ -123,7 +123,7 @@
       $_SESSION['movie']['hour'] = $_POST['movie']['hour'];
       $_SESSION['total'] = $_POST['total'];
       $_SESSION['order'] = $_POST['order'];
-      header("Location: receipt.php");
+      header('Location: receipt.php');
     }
   }
 ?>
