@@ -138,8 +138,8 @@
       $filename = "bookings.txt";
       $fp = fopen($filename,"a");
       flock($fp, LOCK_EX);
-      fputcsv($file,date("Y-m-d"),"\t");
-      fputcsv($file,$book_str);
+      fputcsv($filename,date("Y-m-d"),"\t");
+      fputcsv($filename,$book_str);
       flock($fp, LOCK_UN);
       fclose($fp);
 
