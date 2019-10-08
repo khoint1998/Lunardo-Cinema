@@ -73,7 +73,7 @@
   //
   // fclose($file);
 
-  $errorFound = false;
+  $errorsFound = false;
   if(!empty($_POST)) {
     if (preg_match("#^[A-Za-z .\-']{1,50}#", $_POST['cust']['name'])) {
       $name = $_POST['cust']['name'];
@@ -113,7 +113,7 @@
 
     $_SESSION['hello'] = "hello world";
 
-    if($errorFound == true && !empty($_SESSION)){
+    if(!$errorsFound && !empty($_SESSION)){
       header("Location: receipt.php");
     }
   }
