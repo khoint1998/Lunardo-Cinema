@@ -116,24 +116,30 @@
       $_SESSION['total'] = $_POST['total'];
       $_SESSION['order'] = $_POST['order'];
 
-
+      $book_str = date("Y-m-d")+"\t"+
+                  $_SESSION['cust']['name']+"\t"+
+                  $_SESSION['cust']['email']+"\t"+
+                  $_SESSION['cust']['mobile']+"\t"+
+                  $_SESSION['movie']['id']+"\t"+
+                  $_SESSION['movie']['day']+"\t"+
+                  $_SESSION['movie']['hour']+"\t"+
+                  "STA"+"\t"+
+                  $_SESSION['seats']['STA']+"\t"+
+                  "STP"+"\t"+
+                  $_SESSION['seats']['STP']+"\t"+
+                  "STC"+"\t"+
+                  $_SESSION['seats']['STC']+"\t"+
+                  "FCA"+"\t"+
+                  $_SESSION['seats']['FCA']+"\t"+
+                  "FCP"+"\t"+
+                  $_SESSION['seats']['FCP']+"\t"+
+                  "FCC"+"\t"+
+                  $_SESSION['seats']['FCC'];
       $filename = "bookings.txt";
       $fp = fopen($filename,"a");
       flock($fp, LOCK_EX);
       fputcsv($file,date("Y-m-d"),"\t");
-      fputcsv($file,$_SESSION['cust']['name'],"\t");
-      fputcsv($file,$_SESSION['cust']['email'],"\t");
-      fputcsv($file,$_SESSION['cust']['mobile'],"\t");
-      fputcsv($file,$_SESSION['movie']['id'],"\t");
-      fputcsv($file,$_SESSION['movie']['day'],"\t");
-      fputcsv($file,$_SESSION['movie']['hour'],"\t");
-      fputcsv($file,$_SESSION['seats']['STA'],"\t");
-      fputcsv($file,$_SESSION['seats']['STP'],"\t");
-      fputcsv($file,$_SESSION['seats']['STC'],"\t");
-      fputcsv($file,$_SESSION['seats']['FCA'],"\t");
-      fputcsv($file,$_SESSION['seats']['FCP'],"\t");
-      fputcsv($file,$_SESSION['seats']['FCC'],"\t");
-      fputcsv($file,$_SESSION['total'],"\t");
+      fputcsv($file,$_SESSION,"\t");
       flock($fp, LOCK_UN);
       fclose($fp);
 
