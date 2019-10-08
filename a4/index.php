@@ -118,9 +118,21 @@
 
 
       $filename = "bookings.txt";
-      $fp = fopen($filename,"a");
+      $fp = fopen($filename,"w");
       flock($fp, LOCK_EX);
-      foreach ($_SESSION as $line) {
+      foreach ($_SESSION['cust'] as $line) {
+        fputcsv($file,$line,"\t");
+      }
+      foreach ($_SESSION['seats'] as $line) {
+        fputcsv($file,$line,"\t");
+      }
+      foreach ($_SESSION['movie'] as $line) {
+        fputcsv($file,$line,"\t");
+      }
+      foreach ($_SESSION['total'] as $line) {
+        fputcsv($file,$line,"\t");
+      }
+      foreach ($_SESSION['order'] as $line) {
         fputcsv($file,$line,"\t");
       }
       flock($fp, LOCK_UN);
