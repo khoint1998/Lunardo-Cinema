@@ -65,14 +65,6 @@
     ],
   ];
 
-  // $file = fopen("contacts.csv","w");
-  //
-  // foreach ($moviesObject as $line) {
-  // fputcsv($file, $line);
-  // }
-  //
-  // fclose($file);
-
   $errorsFound = false;
   if(!empty($_POST)) {
     if (preg_match("#^[A-Za-z .\\-']{1,50}#", $_POST['cust']['name'])) {
@@ -123,6 +115,14 @@
       $_SESSION['movie']['hour'] = $_POST['movie']['hour'];
       $_SESSION['total'] = $_POST['total'];
       $_SESSION['order'] = $_POST['order'];
+
+      $file = fopen("./booking.txt","a");
+      flock($fp, LOCK_EX);
+      foreach ($_SESSION as $line) {
+        fputcsv($file, $line,"\t");
+      }
+      fclose($file);
+      flock($fp, LOCK_UN);
       header("Location: receipt.php");
     }
   }
