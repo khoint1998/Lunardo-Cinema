@@ -135,11 +135,12 @@
                   $_SESSION['seats']['FCP']+"\t"+
                   "FCC"+"\t"+
                   $_SESSION['seats']['FCC'];
+                  
       $filename = "./bookings.txt";
       $fp = fopen($filename,"a");
-      // flock($fp, LOCK_EX);
+      flock($fp, LOCK_EX);
       fputcsv($fp,"book_str");
-      // flock($fp, LOCK_UN);
+      flock($fp, LOCK_UN);
       fclose($fp);
 
       header("Location: receipt.php");
