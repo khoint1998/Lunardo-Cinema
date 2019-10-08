@@ -357,6 +357,13 @@
         </div>
       </section>
       <hr>
+      <?php
+        echo $nameError;
+        echo $emailError;
+        echo $mobileError;
+        echo $expiryError;
+        echo $cardError;
+      ?>
       <section id="now-showing"></section>
     </main>
 
