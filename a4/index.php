@@ -106,26 +106,25 @@
       $errorsFound = true;
     }
 
-  }
-
-  if(!$errorsFound){
-    $_SESSION['cust']['name'] = $_POST['cust']['name'];
-    $_SESSION['cust']['email'] = $_POST['cust']['email'];
-    $_SESSION['cust']['mobile'] = $_POST['cust']['mobile'];
-    $_SESSION['cust']['card'] = $_POST['cust']['card'];
-    $_SESSION['cust']['expiry'] = $_POST['cust']['expiry'];
-    $_SESSION['seats']['STA'] = $_POST['seats']['STA'];
-    $_SESSION['seats']['STP'] = $_POST['seats']['STP'];
-    $_SESSION['seats']['STC'] = $_POST['seats']['STC'];
-    $_SESSION['seats']['FCA'] = $_POST['seats']['FCA'];
-    $_SESSION['seats']['FCP'] = $_POST['seats']['FCP'];
-    $_SESSION['seats']['FCC'] = $_POST['seats']['FCC'];
-    $_SESSION['movie']['id'] = $_POST['movie']['id'];
-    $_SESSION['movie']['day'] = $_POST['movie']['day'];
-    $_SESSION['movie']['hour'] = $_POST['movie']['hour'];
-    $_SESSION['total'] = $_POST['total'];
-    $_SESSION['order'] = $_POST['order'];
-    // header("Location: receipt.php");
+    if(!$errorsFound){
+      $_SESSION['cust']['name'] = $_POST['cust']['name'];
+      $_SESSION['cust']['email'] = $_POST['cust']['email'];
+      $_SESSION['cust']['mobile'] = $_POST['cust']['mobile'];
+      $_SESSION['cust']['card'] = $_POST['cust']['card'];
+      $_SESSION['cust']['expiry'] = $_POST['cust']['expiry'];
+      $_SESSION['seats']['STA'] = $_POST['seats']['STA'];
+      $_SESSION['seats']['STP'] = $_POST['seats']['STP'];
+      $_SESSION['seats']['STC'] = $_POST['seats']['STC'];
+      $_SESSION['seats']['FCA'] = $_POST['seats']['FCA'];
+      $_SESSION['seats']['FCP'] = $_POST['seats']['FCP'];
+      $_SESSION['seats']['FCC'] = $_POST['seats']['FCC'];
+      $_SESSION['movie']['id'] = $_POST['movie']['id'];
+      $_SESSION['movie']['day'] = $_POST['movie']['day'];
+      $_SESSION['movie']['hour'] = $_POST['movie']['hour'];
+      $_SESSION['total'] = $_POST['total'];
+      $_SESSION['order'] = $_POST['order'];
+      // header("Location: receipt.php");
+    }
   }
 ?>
 <!DOCTYPE html>
