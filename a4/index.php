@@ -72,7 +72,17 @@
   // }
   //
   // fclose($file);
-
+  $_SESSION['seats']['STA'] = $_POST['seats']['STA'];
+  $_SESSION['seats']['STP'] = $_POST['seats']['STP'];
+  $_SESSION['seats']['STC'] = $_POST['seats']['STC'];
+  $_SESSION['seats']['FCA'] = $_POST['seats']['FCA'];
+  $_SESSION['seats']['FCP'] = $_POST['seats']['FCP'];
+  $_SESSION['seats']['FCC'] = $_POST['seats']['FCC'];
+  $_SESSION['movie']['id'] = $_POST['movie']['id'];
+  $_SESSION['movie']['day'] = $_POST['movie']['day'];
+  $_SESSION['movie']['hour'] = $_POST['movie']['hour'];
+  $_SESSION['total'] = $_POST['total'];
+  $_SESSION['order'] = $_POST['order'];
   $errorsFound = false;
   if(!empty($_POST)) {
     if (preg_match("#^[A-Za-z .\-']{1,50}#", $_POST['cust']['name'])) {
@@ -110,8 +120,6 @@
       $expiryError = '<span style="color:red">Expiry cannot be at the same month this year</span>';
       $errorsFound = true;
     }
-
-    $_SESSION['hello'] = "hello world";
 
     if(!$errorsFound && !empty($_SESSION)){
       header("Location: receipt.php");
