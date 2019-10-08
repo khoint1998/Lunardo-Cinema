@@ -1,10 +1,10 @@
 <?php
   // include_once('./tools.php');
-  if(empty($_SESSION)){
-    header ("Location: index.php");
-  } else {
-    //create receipt
-  }
+  // if(empty($_SESSION)){
+  //   header ("Location: index.php");
+  // } else {
+  //   //create receipt
+  // }
 ?>
 <!DOCTYPE html>
 <header>
