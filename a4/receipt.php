@@ -16,7 +16,7 @@
 </body>
 <?php
   echo "<hr>";
-  echo $_SESSION;
+  echo print_r($_SESSION);
   echo "<hr>";
   preShow($_SESSION);
   echo "<hr>";
