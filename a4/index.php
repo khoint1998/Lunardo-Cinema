@@ -139,7 +139,7 @@
       $fp = fopen($filename,"a");
       flock($fp, LOCK_EX);
       fputcsv($file,date("Y-m-d"),"\t");
-      fputcsv($file,$_SESSION,"\t");
+      fputcsv($file,$book_str);
       flock($fp, LOCK_UN);
       fclose($fp);
 
