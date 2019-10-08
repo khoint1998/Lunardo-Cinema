@@ -116,13 +116,14 @@
       $_SESSION['total'] = $_POST['total'];
       $_SESSION['order'] = $_POST['order'];
 
-      $file = fopen("./booking.txt","a");
+      $fp = fopen("./booking.txt","a");
       flock($fp, LOCK_EX);
       foreach ($_SESSION as $line) {
         fputcsv($file,$line,"\t");
       }
-      fclose($file);
       flock($fp, LOCK_UN);
+      fclose($fp);
+
       header("Location: receipt.php");
     }
   }
