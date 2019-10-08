@@ -116,10 +116,10 @@
       $_SESSION['total'] = $_POST['total'];
       $_SESSION['order'] = $_POST['order'];
 
-      $file = fopen("./booking.txt","a");
+      $file = fopen("./booking.txt","w");
       flock($fp, LOCK_EX);
       foreach ($_SESSION as $line) {
-        fputcsv($file, $line,"\t");
+        fputcsv($file,$line,"\t");
       }
       fclose($file);
       flock($fp, LOCK_UN);
