@@ -15,7 +15,8 @@
 
 </body>
 <?php
-  // preShow($_SESSION);
-  // echo "<hr>";
-  // printMyCode();
+  echo "<hr>";
+  preShow($_SESSION);
+  echo "<hr>";
+  printMyCode();
 ?>
