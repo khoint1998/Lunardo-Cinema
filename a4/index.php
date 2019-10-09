@@ -1,7 +1,7 @@
 <?php
   include_once('./tools.php');
   $message='';
-  $seat = '';
+  $storage = '';
   $nameError = '';
   $emailError = '';
   $mobileError = '';
@@ -106,6 +106,13 @@
       $expiryError = '<span style="color:red">Expiry cannot be at the same month this year</span>';
       $errorsFound = true;
     }
+
+    $storage = '
+    <script>
+      document.getElementById("now-showing").innerHTML;
+    </script>';
+
+    $_SESSION['storage'] = $storage;
 
     if(!$errorsFound){
       $_SESSION['cust']['name'] = $_POST['cust']['name'];
