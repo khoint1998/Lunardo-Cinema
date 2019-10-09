@@ -107,12 +107,12 @@
       $errorsFound = true;
     }
 
-    $storage = '
-    <script>
-      document.getElementById("now-showing");
-    </script>';
-
-    $_SESSION['storage'] = $storage;
+    // $storage = '
+    // <script>
+    //   document.getElementById("now-showing");
+    // </script>';
+    //
+    // $_SESSION['storage'] = $storage;
 
     if(!$errorsFound){
       $_SESSION['cust']['name'] = $_POST['cust']['name'];
