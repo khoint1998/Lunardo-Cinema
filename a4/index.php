@@ -131,6 +131,7 @@
         'FCA' => $_SESSION['seats']['FCA'],
         'FCP' => $_SESSION['seats']['FCP'],
         'FCC' => $_SESSION['seats']['FCC'],
+        'Total' => $_SESSION['total']
       ];
       $fp = fopen($filename,"a");
       flock($fp, LOCK_EX);
