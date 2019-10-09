@@ -109,7 +109,7 @@
 
     $storage = '
     <script>
-      document.getElementById("now-showing").innerHTML;
+      document.getElementById("now-showing");
     </script>';
 
     $_SESSION['storage'] = $storage;
