@@ -1,12 +1,14 @@
 <?php
   include_once('./tools.php');
   $message='';
+  $seat = '';
   $nameError = '';
   $emailError = '';
   $mobileError = '';
   $cardError = '';
   $expiryError = '';
 
+  $seatError = '';
   $name ='';
   $email='';
   $mobile='';
@@ -67,6 +69,13 @@
 
   $errorsFound = false;
   if(!empty($_POST)) {
+    if ($_POST['seats']['STA'] != 0 || $_POST['seats']['STP'] != 0 || $_POST['seats']['STC'] != 0
+    || $_POST['seats']['FCA'] != 0 || $_POST['seats']['FCP'] != 0 || $_POST['seats']['FCC'] != 0){
+
+    } else {
+      $seatError = '<span style="color:red">Please choose at least 1 seat to continue</span>';
+      $errorsFound = true;
+    }
     if (preg_match("#^[A-Za-z .\\-']{1,50}#", $_POST['cust']['name'])) {
       $name = $_POST['cust']['name'];
     } else {
@@ -379,6 +388,7 @@
         echo $mobileError;
         echo $expiryError;
         echo $cardError;
+        echo $seatError;
       ?>
       <section id="now-showing"></section>
     </main>
@@ -534,7 +544,7 @@
           <div class="form-std">
             <label for="std-adults">Adults: </label>
             <select name="seats[STA]" id="seats-STA" onchange="calcPrice()">
-              <option value="">Please Select</option>
+              <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -550,7 +560,7 @@
           <div class="form-std">
             <label for="std-concession">Concession: </label>
             <select name="seats[STP]" id="seats-STP" onchange="calcPrice()">
-              <option value="">Please Select</option>
+              <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -566,7 +576,7 @@
           <div class="form-std">
             <label for="std-children">Children: </label>
             <select name="seats[STC]" id="seats-STC" onchange="calcPrice()">
-              <option value="">Please Select</option>
+              <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -585,7 +595,7 @@
           <div class="form-std">
             <label for="std-adults">Adults: </label>
             <select name="seats[FCA]" id="seats-FCA" onchange="calcPrice()">
-              <option value="">Please Select</option>
+              <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -601,7 +611,7 @@
           <div class="form-std">
             <label for="std-concession">Concession: </label>
             <select name="seats[FCP]" id="seats-FCP" onchange="calcPrice()">
-              <option value="">Please Select</option>
+              <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
@@ -617,7 +627,7 @@
           <div class="form-std">
             <label for="std-children">Children: </label>
             <select name="seats[FCC]" id="seats-FCC" onchange="calcPrice()">
-              <option value="">Please Select</option>
+              <option value="0">Please Select</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>
