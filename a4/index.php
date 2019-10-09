@@ -139,7 +139,7 @@
       $filename = "./bookings.txt";
       $fp = fopen($filename,"a");
       flock($fp, LOCK_EX);
-      fputcsv($fp,$_SESSION,"\t");
+      fputcsv($fp,$_SESSION['cust']['name'],$_SESSION['cust']['email'],"\t");
       flock($fp, LOCK_UN);
       fclose($fp);
 
