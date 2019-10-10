@@ -56,10 +56,6 @@ h1 {
   text-shadow: 1px 1px yellow;
 }
 
-.company-detail {
-  display:inline-flex;
-}
-
 .company {
   font-weight: bold;
   margin-right: 20%;
