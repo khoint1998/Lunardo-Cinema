@@ -59,6 +59,6 @@ h1, .booking-details {
   clear: both;
 }
 
-.sub-total {
+.sub-total td{
   padding: 4px;
 }
