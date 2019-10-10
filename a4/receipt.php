@@ -68,15 +68,15 @@
         <span> <?php echo $movieTitle; ?></span> - <span><?php echo $day; ?></span> - <span><?php echo $time; ?></span>
         <div class="company-detail">
           <div class="company">
-            <div>Lunardo Cinema</div>
-            <div>lunardo.com.au</div>
-            <div>customercare@lunardo.com</div>
-            <div>ABN: 00 123 456 789</div>
+            <p>Lunardo Cinema</p>
+            <p>lunardo.com.au</p>
+            <p>customercare@lunardo.com</p>
+            <p>ABN: 00 123 456 789</p>
           </div>
           <div class="receip-detail">
-            <div>Receipt no: #000</div>
-            <div>Date of issue: <?php echo date("d/m/Y"); ?></div>
-            <div>Address: 1 Luna St., Melbourne, VIC</div>
+            <p>Receipt no: #000</p>
+            <p>Date of issue: <?php echo date("d/m/Y"); ?></p>
+            <p>Address: 1 Luna St., Melbourne, VIC</p>
           </div>
         </div>
       </div>
