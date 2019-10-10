@@ -56,4 +56,5 @@ h1, .booking-details {
   margin-left: auto;
   margin-right: 5px;
   text-align: right;
+  float: right;
 }
