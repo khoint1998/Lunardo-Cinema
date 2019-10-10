@@ -56,7 +56,7 @@ h1, .booking-details {
 .sub-table {
   margin-left: auto;
   margin-right: 5px;
-  text-align: right;
+  /* text-align: right; */
   float: right;
   clear: both;
 }
