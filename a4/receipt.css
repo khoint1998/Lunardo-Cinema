@@ -37,6 +37,7 @@ h1{
 
 footer {
   border-bottom: 2px 2px Black;
+  clear: both;
 }
 
 h1, .booking-details {
@@ -57,4 +58,5 @@ h1, .booking-details {
   margin-right: 5px;
   text-align: right;
   float: right;
+  clear: both;
 }
