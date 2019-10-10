@@ -1,5 +1,6 @@
 body {
   font-size: 200%;
+  padding: 5px;
 }
 
 h1{
@@ -24,17 +25,19 @@ h1{
 #price th {
   padding-top: 12px;
   padding-bottom: 12px;
-  text-align: left;
+  text-align: right;
   background-color: Black;
   color: #BDB76B;
 }
 
 .invoice {
   background-color: #ffec8f;
+  padding: 3px;
   border-top: 5px solid #856f00;
 }
 
 footer {
+  padding: 3px;
   background-color: #ffec8f;
   border-bottom: 5px solid #856f00;
   clear: both;
