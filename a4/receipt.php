@@ -75,8 +75,8 @@
           </div>
           <div class="receip-detail">
             <div>Receipt no: #000</div>
-            <div>Date of issue <?php echo date("d/m/Y"); ?></div>
-            <div>1 Luna St., Melbourne, VIC</div>
+            <div>Date of issue: <?php echo date("d/m/Y"); ?></div>
+            <div>Address: 1 Luna St., Melbourne, VIC</div>
           </div>
         </div>
       </div>
@@ -84,7 +84,7 @@
 
     <div class="bill-to">
       <div class="bill-to-title">Bill To: <?php echo $_SESSION['cart']['cust']['name']; ?></div>
-      <div>Mobil: <?php echo $_SESSION['cart']['cust']['mobile']; ?></div>
+      <div>Mobile: <?php echo $_SESSION['cart']['cust']['mobile']; ?></div>
       <div>Email: <?php echo $_SESSION['cart']['cust']['email']; ?></div>
     </div>
 
