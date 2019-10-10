@@ -60,8 +60,13 @@ h1 {
   display:inline-flex;
 }
 
-.company, .receipt-detail {
+.company {
   font-weight: bold;
+}
+
+.receipt-detail {
+  font-weight: bold;
+  float: right;
 }
 
 .sub-table {
