@@ -75,7 +75,7 @@
             <span>customercare@lunardo.com</span>
             <span>ABN: 00 123 456 789</span>
           </div>
-          <div class="receip-detail">
+          <div class="receipt-detail">
             <span>Receipt details</span>
             <span>Receipt no: #000</span>
             <span>Date of issue: <?php echo date("d/m/Y"); ?></span>
