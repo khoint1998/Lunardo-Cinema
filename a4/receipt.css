@@ -21,8 +21,6 @@ h1{
 
 #price tr:nth-child(even){background-color: #aea27a;}
 
-#price tr:hover {background-color: #aea27a;}
-
 #price th {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -59,4 +57,8 @@ h1, .booking-details {
   /* text-align: right; */
   float: right;
   clear: both;
+}
+
+.sub-total {
+  padding: 4px;
 }
