@@ -76,7 +76,8 @@
             <span>ABN: 00 123 456 789</span>
           </div>
           <div class="receip-detail">
-            <span>Receipt no: #000</p>
+            <span>Receipt details</span>
+            <span>Receipt no: #000</span>
             <span>Date of issue: <?php echo date("d/m/Y"); ?></span>
             <span>Address: 1 Luna St., Melbourne, VIC</span>
           </div>
