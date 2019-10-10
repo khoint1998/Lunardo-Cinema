@@ -1,6 +1,7 @@
 body {
   font-size: 200%;
   padding: 5px;
+  margin: 5px;
 }
 
 h1{
@@ -56,7 +57,7 @@ h1 {
 }
 
 .company-detail {
-  display: block;
+  display:inline-flex;
 }
 
 .company, .receipt-detail {
