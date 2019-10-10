@@ -120,19 +120,19 @@
       $filename = "./bookings.txt";
       $book_str = [
         'Date' => date("Y-m-d"),
-        'Name' => $_SESSION['cust']['name'],
-        'Email' => $_SESSION['cust']['email'],
-        'Mobile' => $_SESSION['cust']['mobile'],
-        'MovieID' => $_SESSION['movie']['id'],
-        'Day' => $_SESSION['movie']['day'],
-        'Hour' => $_SESSION['movie']['hour'],
-        'STA' => $_SESSION['seats']['STA'],
-        'STP' => $_SESSION['seats']['STP'],
-        'STC' => $_SESSION['seats']['STC'],
-        'FCA' => $_SESSION['seats']['FCA'],
-        'FCP' => $_SESSION['seats']['FCP'],
-        'FCC' => $_SESSION['seats']['FCC'],
-        'Total' => $_SESSION['total']
+        'Name' => $_SESSION['cart']['cust']['name'],
+        'Email' => $_SESSION['cart']['cust']['email'],
+        'Mobile' => $_SESSION['cart']['cust']['mobile'],
+        'MovieID' => $_SESSION['cart']['movie']['id'],
+        'Day' => $_SESSION['cart']['movie']['day'],
+        'Hour' => $_SESSION['cart']['movie']['hour'],
+        'STA' => $_SESSION['cart']['seats']['STA'],
+        'STP' => $_SESSION['cart']['seats']['STP'],
+        'STC' => $_SESSION['cart']['seats']['STC'],
+        'FCA' => $_SESSION['cart']['seats']['FCA'],
+        'FCP' => $_SESSION['cart']['seats']['FCP'],
+        'FCC' => $_SESSION['cart']['seats']['FCC'],
+        'Total' => $_SESSION['cart']['total']
       ];
       $fp = fopen($filename,"a");
       flock($fp, LOCK_EX);
