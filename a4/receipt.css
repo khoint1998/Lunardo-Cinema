@@ -30,11 +30,13 @@ h1{
 }
 
 .invoice {
-  border-top: 5px solid Black;
+  background-color: #ffec8f;
+  border-top: 5px solid #856f00;
 }
 
 footer {
-  border-bottom: 5px solid Black;
+  background-color: #ffec8f;
+  border-bottom: 5px solid #856f00;
   clear: both;
 }
 
