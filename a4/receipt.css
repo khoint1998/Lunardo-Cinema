@@ -51,7 +51,7 @@ h1 {
 }
 
 .company-detail {
-  display: inline;
+  display: block;
 }
 
 .company, .receipt-detail {
