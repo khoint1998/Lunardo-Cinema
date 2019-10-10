@@ -65,7 +65,9 @@
     <div class="invoice">
       <h1>Invoice</h1>
       <div class="booking-details">
-        <span> <?php echo $movieTitle; ?></span> - <span><?php echo $day; ?></span> - <span><?php echo $time; ?></span>
+        <div class="receipt-title">
+          <span> <?php echo $movieTitle; ?></span> - <span><?php echo $day; ?></span> - <span><?php echo $time; ?></span>
+        </div>
         <div class="company-detail">
           <div class="company">
             <p>Lunardo Cinema</p>
