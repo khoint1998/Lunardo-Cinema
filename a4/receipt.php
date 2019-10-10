@@ -70,15 +70,15 @@
         </div>
         <div class="company-detail">
           <div class="company">
-            <p>Lunardo Cinema</p>
-            <p>lunardo.com.au</p>
-            <p>customercare@lunardo.com</p>
-            <p>ABN: 00 123 456 789</p>
+            <span>Lunardo Cinema</span>
+            <span>lunardo.com.au</span>
+            <span>customercare@lunardo.com</span>
+            <span>ABN: 00 123 456 789</span>
           </div>
           <div class="receip-detail">
-            <p>Receipt no: #000</p>
-            <p>Date of issue: <?php echo date("d/m/Y"); ?></p>
-            <p>Address: 1 Luna St., Melbourne, VIC</p>
+            <span>Receipt no: #000</p>
+            <span>Date of issue: <?php echo date("d/m/Y"); ?></span>
+            <span>Address: 1 Luna St., Melbourne, VIC</span>
           </div>
         </div>
       </div>

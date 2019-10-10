@@ -64,9 +64,17 @@ h1 {
   font-weight: bold;
 }
 
+.company span{
+  display: block;
+}
+
 .receipt-detail {
   font-weight: bold;
   float: right;
+}
+
+.receipt-detail span {
+  display: block;
 }
 
 .sub-table {
