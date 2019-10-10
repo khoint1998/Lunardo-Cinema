@@ -7,7 +7,7 @@
   $movieTitle ='';
   $time ='';
   $day = '';
-  $GST = ($_SESSION['cart']['total'])/11;
+  $GST = number_format((float)(($_SESSION['cart']['total'])/11), 2, '.', '');;
   $STA='';
   $STP='';
   $STC='';
@@ -84,8 +84,8 @@
 
     <div class="bill-to">
       <div class="bill-to-title">Bill To: <?php echo $_SESSION['cart']['cust']['name']; ?></div>
-      <div><?php echo $_SESSION['cart']['cust']['mobile']; ?></div>
-      <div><?php echo $_SESSION['cart']['cust']['email']; ?></div>
+      <div>Mobil: <?php echo $_SESSION['cart']['cust']['mobile']; ?></div>
+      <div>Email: <?php echo $_SESSION['cart']['cust']['email']; ?></div>
     </div>
 
     <div class="table">
