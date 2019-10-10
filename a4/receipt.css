@@ -38,9 +38,12 @@ footer {
   clear: both;
 }
 
-h1, .booking-details {
-  text-shadow: 1px 1px yellow;
+h1 {
   text-align: center;
+}
+
+.booking-details {
+  text-shadow: 1px 1px yellow;
 }
 
 .company-detail {

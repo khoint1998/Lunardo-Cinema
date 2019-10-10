@@ -58,7 +58,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Thank you for your purchase!</title>
+    <title>Thank you for your purchase! - Lunardo Cinema</title>
     <link id='stylecss' type="text/css" rel="stylesheet" href="receipt.css">
   </head>
   <body>
