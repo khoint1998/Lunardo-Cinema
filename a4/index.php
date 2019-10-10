@@ -400,9 +400,13 @@
 
     <?php
       echo "<hr>";
+      echo "POST Array contatins:";
       preShow($_POST);
+      echo "<hr>";
+      echo "POST Array contatins:";
       preShow($_SESSION);
       echo "<hr>";
+      echo "Code Debug Module:";
       printMyCode();
     ?>
   </body>
