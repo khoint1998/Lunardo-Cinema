@@ -14,8 +14,8 @@
   $FCA='';
   $FCP='';
   $FCC='';
-  $subtotal ='';
-  $totalDue ='';
+  $subtotal = $_SESSION['cart']['total'];
+  $totalDue = $GST + $subtotal;
 
   if ($_SESSION['cart']['movie']['id'] == "ACT") {
     $movieTitle ='Avengers: Endgame';
@@ -145,9 +145,9 @@
       </table>
     </div>
     <div class="sub-table">
-      <span>Subtotal: <?php echo $subtotal; ?></span>
-      <span>GST included: <?php echo $GST; ?></span>
-      <span>Total Due: <?php echo $totalDue; ?></span>
+      <div>Subtotal: <?php echo $subtotal; ?></div>
+      <div>GST included: <?php echo $GST; ?></div>
+      <div>Total Due: <?php echo $totalDue; ?></div>
     </div>
 
     <footer>
