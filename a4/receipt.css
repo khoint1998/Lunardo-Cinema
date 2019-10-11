@@ -50,12 +50,12 @@ h1 {
 
 #rightbox {
     float: right;
-    width: 25%;
+    width: 50%;
+    text-align: right;
 }
 #leftbox {
     float: left;
     width: 50%;
-    text-align: right;
 }
 
 .receipt-title {
