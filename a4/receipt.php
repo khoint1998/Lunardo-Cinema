@@ -56,18 +56,18 @@
   $title = $movieTitle + "-" + $day + "-" + $time;
   $ticket = "ticket";
 
-  // function printTicket() {
-  //   while ($ticketCount > 0){
-  //     echo "
-  //     <section class=".$ticket.">
-  //       <div class="">
-  //         Ticket #" $ticketCount . "/" . $title ."
-  //       </div>
-  //     </section>
-  //     ";
-  //     $ticketCount--;
-  //   }
-  // }
+  function printTicket() {
+    while ($ticketCount > 0){
+      echo '
+      <section class="ticket">
+        <div class="">
+          Ticket #' $ticketCount . '/' . $title .'
+        </div>
+      </section>
+      ';
+      $ticketCount--;
+    }
+  }
 ?>
 
 <!DOCTYPE html>
