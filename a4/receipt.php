@@ -8,11 +8,11 @@
   $time ='';
   $day = '';
   $GST = number_format((float)(($_SESSION['cart']['total'])/11), 2, '.', '');;
-  $ticketCount =  $_SESSION['cart']['seats']['STA'] .
-                  $_SESSION['cart']['seats']['STP'] .
-                  $_SESSION['cart']['seats']['STC'] .
-                  $_SESSION['cart']['seats']['FCA'] .
-                  $_SESSION['cart']['seats']['FCP'] .
+  $ticketCount =  $_SESSION['cart']['seats']['STA'] +
+                  $_SESSION['cart']['seats']['STP'] +
+                  $_SESSION['cart']['seats']['STC'] +
+                  $_SESSION['cart']['seats']['FCA'] +
+                  $_SESSION['cart']['seats']['FCP'] +
                   $_SESSION['cart']['seats']['FCC'];
   $subtotal = $_SESSION['cart']['total'];
   $totalDue = $GST + $subtotal;
@@ -53,7 +53,7 @@
     $time = '9pm';
   }
 
-  $title = $movieTitle + "-" + $day + "-" + $time;
+  $title = $movieTitle . "-" . $day . "-" . $time;
   $ticket = "ticket";
 
 
