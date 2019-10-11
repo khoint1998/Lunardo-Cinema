@@ -77,9 +77,10 @@ h1 {
   margin-right: 5px;
   float: right;
   clear: both;
+  margin-bottom: 2%;
+  margin-top: 1%;
 }
 
-.sub-table div{
-  padding: 4px;
+.sub-table div {
   text-align: right;
 }
