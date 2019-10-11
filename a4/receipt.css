@@ -94,6 +94,7 @@ h1 {
 }
 
 .ticket {
+  font-size: 130%;
   padding: 3%;
   text-align: center;
   border: 2px solid #BDB76B;

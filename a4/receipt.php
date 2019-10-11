@@ -206,12 +206,14 @@
     }
     echo '
     <section class="ticket">
+    <span><img class="logo" src="../../media/logo.png" alt="logo"></span>
       <div class="">
         Ticket #'. $ticketCount . '/' . $title .'
       </div>
       <div class="">
         Seat: '. $seatPrint . '
       </div>
+      <span><img class="logo" src="../../media/barcode.png" alt="barcode"></span>
     </section>
     ';
     $ticketCount--;
