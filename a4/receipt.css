@@ -86,10 +86,9 @@ h1 {
 #rightbox{
     float:right;
     width:25%;
-    height:280px;
 }
 #leftbox{
     float:left;
     width:50%;
-    height:280px;
+    text-align: right;
 }
