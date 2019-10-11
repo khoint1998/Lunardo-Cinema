@@ -103,8 +103,8 @@ h1 {
   text-shadow: 1px 1px yellow;
 }
 
-ticket img {
-  width: 50px;
+.ticket span img {
+  width: 100%;
 }
 
 @media print {
