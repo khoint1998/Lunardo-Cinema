@@ -187,22 +187,22 @@
   while ($ticketCount > 0){
     if ($remainSTA > 0){
       $seatPrint = $STA;
-      $STA--;
+      $remainSTA--;
     } else if ($remainSTP > 0) {
       $seatPrint = $STP;
-      $STP--;
+      $remainSTP--;
     } else if ($remainSTC > 0) {
       $seatPrint = $STC;
-      $STC--;
+      $remainSTC--;
     } else if ($remainFCA > 0) {
       $seatPrint = $FCA;
-      $FCA--;
+      $remainFCA--;
     } else if ($remainFCP > 0) {
       $seatPrint = $FCP;
-      $FCP--;
+      $remainFCP--;
     } else {
       $seatPrint = $FCC;
-      $FCC--;
+      $remainFCC--;
     }
     echo '
     <section class="ticket">
