@@ -59,9 +59,9 @@
   function printTicket() {
     while ($ticketCount > 0){
       echo "
-      <section class="+$ticket+">
+      <section class=".$ticket.">
         <div class="">
-          Ticket #" $ticketCount + "/" + $title +"
+          Ticket #" $ticketCount . "/" . $title ."
         </div>
       </section>
       ";
