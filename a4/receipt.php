@@ -180,6 +180,8 @@
   </body>
 </html>
 
+<?php printTicket(); ?>
+
 <div class="not-print">
   <?php
     echo "<hr>";

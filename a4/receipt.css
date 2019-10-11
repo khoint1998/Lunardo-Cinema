@@ -93,6 +93,12 @@ h1 {
   text-align: right;
 }
 
+.ticket {
+  border: 5px solid #BDB76B;
+  margin-top: 5%;
+  text-shadow: 1px 1px yellow;
+}
+
 @media print {
   body {
     margin-left: 5%;
