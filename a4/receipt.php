@@ -69,13 +69,13 @@
           <span> <?php echo $movieTitle; ?></span> - <span><?php echo $day; ?></span> - <span><?php echo $time; ?></span>
         </div>
         <div class="company-detail">
-          <div class="company">
+          <div id="leftbox" class="company">
             <span>Lunardo Cinema</span>
             <span>lunardo.com.au</span>
             <span>customercare@lunardo.com</span>
             <span>ABN: 00 123 456 789</span>
           </div>
-          <div class="receipt-detail">
+          <div id="rightbox" class="receipt-detail">
             <span>Receipt details</span>
             <span>Receipt no: #000</span>
             <span>Date of issue: <?php echo date("d/m/Y"); ?></span>

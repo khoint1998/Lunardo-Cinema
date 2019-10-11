@@ -75,11 +75,21 @@ h1 {
 .sub-table {
   margin-left: auto;
   margin-right: 5px;
-  /* text-align: right; */
   float: right;
   clear: both;
 }
 
 .sub-total td{
   padding: 4px;
+}
+
+#rightbox{
+    float:right;
+    width:25%;
+    height:280px;
+}
+#leftbox{
+    float:left;
+    width:50%;
+    height:280px;
 }
