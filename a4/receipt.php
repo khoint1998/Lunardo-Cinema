@@ -170,11 +170,47 @@
 </html>
 
 <?php
+  $STA = 'Standard Adult';
+  $STP = 'Standard Concession';
+  $STC = 'Standard Children';
+  $FCA = 'First Class Adult';
+  $FCP = 'First Class Concession';
+  $FCC = 'First Class Children';
+  $seatPrint = '';
+  $remainSTA = $_SESSION['cart']['seats']['STA'];
+  $remainSTP = $_SESSION['cart']['seats']['STP'];
+  $remainSTC = $_SESSION['cart']['seats']['STC'];
+  $remainFCA = $_SESSION['cart']['seats']['FCA'];
+  $remainFCP = $_SESSION['cart']['seats']['FCP'];
+  $remainFCC = $_SESSION['cart']['seats']['FCC'];
+
   while ($ticketCount > 0){
+    if ($remainSTA > 0){
+      $seatPrint = $STA;
+      $STA--;
+    } else if ($remainSTP > 0) {
+      $seatPrint = $STP;
+      $STP--;
+    } else if ($remainSTC > 0) {
+      $seatPrint = $STC;
+      $STC--;
+    } else if ($remainFCA > 0) {
+      $seatPrint = $FCA;
+      $FCA--;
+    } else if ($remainFCP > 0) {
+      $seatPrint = $FCP;
+      $FCP--;
+    } else {
+      $seatPrint = $FCC;
+      $FCC--;
+    }
     echo '
     <section class="ticket">
       <div class="">
         Ticket #'. $ticketCount . '/' . $title .'
+      </div>
+      <div class="">
+        Seat: '. $seatPrint . '
       </div>
     </section>
     ';
