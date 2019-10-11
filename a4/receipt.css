@@ -79,6 +79,7 @@ h1 {
   clear: both;
 }
 
-.sub-total td{
+.sub-total div{
   padding: 4px;
+  text-align: right;
 }
