@@ -95,7 +95,7 @@
     </div>
 
     <div class="bill-to">
-      <div class="bill-to-title">Bill To: <?php echo $_SESSION['cart']['cust']['name']; ?></div>
+      <div>Bill To: <?php echo $_SESSION['cart']['cust']['name']; ?></div>
       <div>Mobile: <?php echo $_SESSION['cart']['cust']['mobile']; ?></div>
       <div>Email: <?php echo $_SESSION['cart']['cust']['email']; ?></div>
     </div>

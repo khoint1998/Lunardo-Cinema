@@ -31,6 +31,12 @@ h1{
   color: #BDB76B;
 }
 
+.bill-to {
+  text-shadow: 1px 1px yellow;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
 .invoice {
   background-color: #ffec8f;
   padding: 3px;
