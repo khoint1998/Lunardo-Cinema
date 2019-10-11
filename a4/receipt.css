@@ -110,6 +110,10 @@ h1 {
     display: none !important;
   }
 
+  footer {
+      page-break-after: always;
+  }
+
   section.ticket {
     page-break-inside: avoid;
   }
