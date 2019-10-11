@@ -55,7 +55,7 @@
 
   $title = $movieTitle + "-" + $day + "-" + $time;
 
-  function printTicket{
+  function printTicket() {
     while ($ticketCount > 0){
       echo "
       <section>
