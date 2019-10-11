@@ -145,20 +145,9 @@
       </table>
     </div>
     <div class="sub-table">
-      <table>
-        <tr>
-          <td>Subtotal</td>
-          <td><?php echo $subtotal; ?></td>
-        </tr>
-        <tr>
-          <td>GST included</td>
-          <td><?php echo $GST; ?></td>
-        </tr>
-        <tr>
-          <td>Total Due</td>
-          <td><?php echo $totalDue; ?></td>
-        </tr>
-      </table>
+      <span>Subtotal: <?php echo $subtotal; ?></span>
+      <span>GST included: <?php echo $GST; ?></span>
+      <span>Total Due: <?php echo $totalDue; ?></span>
     </div>
 
     <footer>

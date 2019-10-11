@@ -48,16 +48,6 @@ h1 {
   text-align: center;
 }
 
-#rightbox {
-    float: right;
-    width: 50%;
-    text-align: right;
-}
-#leftbox {
-    float: left;
-    width: 50%;
-}
-
 .receipt-title {
   text-align: center;
 }
