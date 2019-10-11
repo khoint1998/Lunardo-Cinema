@@ -1,7 +1,6 @@
 body {
-  padding: 1%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 h1{
@@ -95,6 +94,11 @@ h1 {
 }
 
 @media print {
+  body {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
   .not-print {
     display: none !important;
   }
