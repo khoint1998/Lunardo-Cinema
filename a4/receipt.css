@@ -97,4 +97,8 @@ h1 {
   .not-print {
     display: none !important;
   }
+
+  section.ticket {
+    page-break-inside: avoid;
+  }
 }
