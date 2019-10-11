@@ -1,7 +1,7 @@
 body {
-  font-size: 150%;
   padding: 1%;
-  margin: 1%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 h1{
@@ -96,7 +96,7 @@ h1 {
 
 @media print {
   .not-print {
-    display: none;
+    display: none !important;
   }
 
   section.ticket {
