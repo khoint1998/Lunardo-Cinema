@@ -8,12 +8,12 @@
   $time ='';
   $day = '';
   $GST = number_format((float)(($_SESSION['cart']['total'])/11), 2, '.', '');;
-  $STA='';
-  $STP='';
-  $STC='';
-  $FCA='';
-  $FCP='';
-  $FCC='';
+  $ticketCount =  $_SESSION['cart']['seats']['STA'] +
+                  $_SESSION['cart']['seats']['STP'] +
+                  $_SESSION['cart']['seats']['STC'] +
+                  $_SESSION['cart']['seats']['FCA'] +
+                  $_SESSION['cart']['seats']['FCP'] +
+                  $_SESSION['cart']['seats']['FCC'];
   $subtotal = $_SESSION['cart']['total'];
   $totalDue = $GST + $subtotal;
 
@@ -51,6 +51,21 @@
     $time = '6pm';
   } else {
     $time = '9pm';
+  }
+
+  $title = $movieTitle + "-" + $day + "-" + $time;
+
+  function printTicket{
+    while ($ticketCount > 0){
+      echo "
+      <section>
+        <div class="">
+          Ticket #" $ticketCount + "/" +  echo $title +"
+        </div>
+      </section>
+      ";
+      $ticketCount--;
+    }
   }
 ?>
 
@@ -149,9 +164,9 @@
       </table>
     </div>
     <div class="sub-table">
-      <div>Subtotal: <?php echo "$"+$subtotal; ?></div>
-      <div>GST included: $<?php echo "$"+$GST; ?></div>
-      <div>Total Due: $<?php echo "$"+$totalDue; ?></div>
+      <div>Subtotal: $<?php echo $subtotal; ?></div>
+      <div>GST included: $<?php echo $GST; ?></div>
+      <div>Total Due: $<?php echo $totalDue; ?></div>
     </div>
 
     <footer>
@@ -163,9 +178,12 @@
 
   </body>
 </html>
-<?php
-  echo "<hr>";
-  preShow($_SESSION);
-  echo "<hr>";
-  printMyCode();
-?>
+
+<div class="not-print">
+  <?php
+    echo "<hr>";
+    preShow($_SESSION);
+    echo "<hr>";
+    printMyCode();
+  ?>
+</div>
