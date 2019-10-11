@@ -73,6 +73,7 @@
             float: left;
             width: 50%;
             margin-top: 3%;
+            margin-bottom: 3%;
           ">
             <span>Lunardo Cinema</span>
             <span>lunardo.com.au</span>
@@ -84,6 +85,7 @@
             width: 50%;
             text-align: right;
             margin-top: 3%;
+            margin-bottom: 3%;
           ">
             <span>Receipt details</span>
             <span>Receipt no: #000</span>
