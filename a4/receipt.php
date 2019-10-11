@@ -213,7 +213,7 @@
       <div class="">
         Seat: '. $seatPrint . '
       </div>
-      <span><img class="logo" src="../../media/barcode.png" alt="barcode"></span>
+      <span><img class="barcode" src="../../media/barcode.png" alt="barcode"></span>
     </section>
     ';
     $ticketCount--;

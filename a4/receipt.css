@@ -103,8 +103,12 @@ h1 {
   text-shadow: 1px 1px yellow;
 }
 
-.ticket span img {
+.logo {
   width: 20%;
+}
+
+.barcode {
+  width: 50%;
 }
 
 @media print {
