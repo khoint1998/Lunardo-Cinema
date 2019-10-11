@@ -61,7 +61,7 @@
       echo '
       <section class="ticket">
         <div class="">
-          Ticket #' $ticketCount . '/' . $title .'
+          Ticket #'. $ticketCount . '/' . $title .'
         </div>
       </section>
       ';
