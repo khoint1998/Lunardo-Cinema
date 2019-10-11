@@ -103,6 +103,10 @@ h1 {
   text-shadow: 1px 1px yellow;
 }
 
+ticket img {
+  width: 50px;
+}
+
 @media print {
   body {
     margin-left: 5%;
