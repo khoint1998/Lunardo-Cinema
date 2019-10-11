@@ -49,12 +49,12 @@ h1 {
 }
 
 #rightbox {
-    float:right;
-    width:25%;
+    float: right;
+    width: 25%;
 }
 #leftbox {
-    float:left;
-    width:50%;
+    float: left;
+    width: 50%;
     text-align: right;
 }
 
