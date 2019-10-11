@@ -72,6 +72,7 @@
           <div id="leftbox" class="company" style="
             float: left;
             width: 50%;
+            margin-top: 3%;
           ">
             <span>Lunardo Cinema</span>
             <span>lunardo.com.au</span>
@@ -82,6 +83,7 @@
             float: right;
             width: 50%;
             text-align: right;
+            margin-top: 3%;
           ">
             <span>Receipt details</span>
             <span>Receipt no: #000</span>
