@@ -7,6 +7,7 @@
   $mobileError = '';
   $cardError = '';
   $expiryError = '';
+  $state = '';
 
   $seatError = '';
   $name ='';
@@ -106,6 +107,8 @@
       $expiryError = '<span style="color:red">Expiry cannot be at the same month this year</span>';
       $errorsFound = true;
     }
+
+    $state = $_POST['state'];
 
     // $storage = '
     // <script>
@@ -382,7 +385,7 @@
         echo $cardError;
         echo $seatError;
       ?>
-      <section id="now-showing"></section>
+      <section id="now-showing"><?php echo $state; ?></section>
     </main>
 
     <footer>

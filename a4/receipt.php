@@ -154,9 +154,9 @@
       </table>
     </div>
     <div class="sub-table">
-      <div>Subtotal: $<?php echo $subtotal; ?></div>
-      <div>GST included: $<?php echo $GST; ?></div>
-      <div>Total Due: $<?php echo $totalDue; ?></div>
+      <div>Subtotal: <?php echo "$".$subtotal; ?></div>
+      <div>GST included: <?php echo "$".$GST; ?></div>
+      <div>Total Due: <?php echo "$".$totalDue; ?></div>
     </div>
 
     <footer>
