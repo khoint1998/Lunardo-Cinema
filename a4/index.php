@@ -372,6 +372,7 @@
       <?php
         echo $nameError;
         echo $emailError;
+        echo $mobileError;
         echo $cardError;
         echo $expiryError;
       ?>
