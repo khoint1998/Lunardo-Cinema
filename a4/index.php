@@ -109,13 +109,6 @@
 
     $state = $_POST['state'];
 
-    // $storage = '
-    // <script>
-    //   document.getElementById("now-showing");
-    // </script>';
-    //
-    // $_SESSION['storage'] = $storage;
-
     if(!$errorsFound){
       $_SESSION['cart'] = $_POST;
 
@@ -376,6 +369,12 @@
         </div>
       </section>
       <hr>
+      <?php
+        echo $nameError;
+        echo $emailError;
+        echo $cardError;
+        echo $expiryError;
+      ?>
       <section id="now-showing"></section>
     </main>
 
@@ -393,11 +392,6 @@
     </footer>
 
     <?php
-    // echo $nameError;
-    // echo $emailError;
-    // echo $cardError;
-    // echo $expiryError;
-
       if(!empty($_POST['movie']['id'])) {
         $glueCode = ['RMC' => 1, 'ACT' => 2, 'ANM' => 3, 'AHF' => 4];
         echo "
