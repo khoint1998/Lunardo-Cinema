@@ -391,7 +391,6 @@
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
-
     <?php
       echo "<hr>";
       preShow($_POST);
@@ -517,7 +516,7 @@
     }
   }
 
-  function bookingForm(id){
+  function bookingForm(id) {
     removeContentById('booking-form');
     document.querySelector("#booking-form").insertAdjacentHTML('afterbegin',
     `
