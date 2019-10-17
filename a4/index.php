@@ -402,8 +402,8 @@
         $glueCode = ['RMC' => 1, 'ACT' => 2, 'ANM' => 3, 'AHF' => 4];
         echo "
         <script>
-          showSynopsis(" + $glueCode[$_POST['movie']['id']] + ");
-          bookingForm2("+$_POST['movie']['id']+","+$_POST['movie']['day']+","+$_POST['movie']['hour']+");
+          showSynopsis(" . $glueCode[$_POST['movie']['id']] . ");
+          bookingForm2(".$_POST['movie']['id'].",".$_POST['movie']['day'].",".$_POST['movie']['hour'].");
         </script>
         ";
       }
