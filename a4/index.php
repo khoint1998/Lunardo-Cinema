@@ -372,7 +372,7 @@
       <?php
         echo $nameError;
         echo $emailError;
-        echo $mobileError;
+        echo $mobileError
         echo $cardError;
         echo $expiryError;
       ?>
@@ -391,18 +391,6 @@
       <div>Disclaimer: This website is not a real website and is being developed as part of a School of Science Web Programming course at RMIT University in Melbourne, Australia.</div>
       <div><button id='toggleWireframeCSS' onclick='toggleWireframe()'>Toggle Wireframe CSS</button></div>
     </footer>
-
-    <?php
-      if(!empty($_POST['movie']['id'])) {
-        $glueCode = ['RMC' => 1, 'ACT' => 2, 'ANM' => 3, 'AHF' => 4];
-        echo "
-        <script>
-          showSynopsis(" . $glueCode[$_POST['movie']['id']] . ");
-          bookingForm2(".$_POST['movie']['id'].",".$_POST['movie']['day'].",".$_POST['movie']['hour'].");
-        </script>
-        ";
-      }
-    ?>
 
     <?php
       echo "<hr>";
