@@ -421,7 +421,7 @@
   };
 
   var date = new Date();
-  var state = '';
+  var state = document.getElementById('now-showing').innerHTML;
 
   function showSynopsis(sw){
     removeContentById('now-showing');
@@ -638,7 +638,7 @@
         </fieldset>
       </div>
       <input type="hidden" name="movie[id]" id="input-movie-id" value="">
-      <input type="hidden" name="state" id="state" value="`+ document.getElementById('now-showing').innerHTML +`">
+      <input type="hidden" name="state" id="state" value="">
       <input type="hidden" name="movie[day]" id="input-movie-day" value="">
       <input type="hidden" name="movie[hour]" id="input-movie-hour" value="">
       <div class="form-section">
