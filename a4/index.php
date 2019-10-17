@@ -376,7 +376,7 @@
         </div>
       </section>
       <hr>
-      <section id="now-showing"><?php echo $state; ?></section>
+      <section id="now-showing"></section>
     </main>
 
     <footer>
@@ -393,6 +393,11 @@
     </footer>
 
     <?php
+    // echo $nameError;
+    // echo $emailError;
+    // echo $cardError;
+    // echo $expiryError;
+
       if(!empty($_POST['movie']['id'])) {
         $glueCode = ['RMC' => 1, 'ACT' => 2, 'ANM' => 3, 'AHF' => 4];
         echo "
