@@ -400,7 +400,7 @@
           showSynopsis(" + $glueCode[$_POST['movie']['id']] + ");
           bookingForm2()
         </script>
-        "
+        ";
       }
     ?>
 
