@@ -398,7 +398,7 @@
         echo "
         <script>
           showSynopsis(" + $glueCode[$_POST['movie']['id']] + ");
-          bookingForm2()
+          bookingForm2("+$_POST['movie']['id']+","+$_POST['movie']['day']+","+$_POST['movie']['hour']+");
         </script>
         ";
       }
