@@ -376,7 +376,17 @@
         </div>
       </section>
       <hr>
-      <section id="now-showing"></section>
+      <section id="now-showing"><?php
+      if(!empty($_POST['movie']['id'])) {
+        $glueCode = ['RMC' => 1, 'ACT' => 2, 'ANM' => 3, 'AHF' => 4];
+        echo "
+        <script>
+          showSynopsis(" + $glueCode[$_POST['movie']['id']] + ");
+          bookingForm2("+$_POST['movie']['id']+","+$_POST['movie']['day']+","+$_POST['movie']['hour']+");
+        </script>
+        ";
+      }
+      ?></section>
     </main>
 
     <footer>
@@ -397,16 +407,6 @@
     // echo $emailError;
     // echo $cardError;
     // echo $expiryError;
-
-      if(!empty($_POST['movie']['id'])) {
-        $glueCode = ['RMC' => 1, 'ACT' => 2, 'ANM' => 3, 'AHF' => 4];
-        echo "
-        <script>
-          showSynopsis(" + $glueCode[$_POST['movie']['id']] + ");
-          bookingForm2("+$_POST['movie']['id']+","+$_POST['movie']['day']+","+$_POST['movie']['hour']+");
-        </script>
-        ";
-      }
     ?>
 
     <?php
