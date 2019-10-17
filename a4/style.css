@@ -303,6 +303,7 @@ div.movie-section {
 
 div.plot{
   width: 350px;
+  text-align: justify;
 }
 
 div.details{
