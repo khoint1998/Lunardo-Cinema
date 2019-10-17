@@ -74,37 +74,37 @@
     || $_POST['seats']['FCA'] != 0 || $_POST['seats']['FCP'] != 0 || $_POST['seats']['FCC'] != 0){
 
     } else {
-      $seatError = '<span style="color:red">Please choose at least 1 seat to continue</span>';
+      $seatError = '<div style="color:red">Please choose at least 1 seat to continue</div>';
       $errorsFound = true;
     }
     if (preg_match("#^[A-Za-z .\\-']{1,50}#", $_POST['cust']['name'])) {
       $name = $_POST['cust']['name'];
     } else {
-      $nameError = '<span style="color:red">Name invalid. Please check again</span>';
+      $nameError = '<div style="color:red">Name invalid. Please check again</div>';
       $errorsFound = true;
     }
     if(!empty($_POST['cust']['email'])) {
       $email = $_POST['cust']['email'];
     } else {
-      $emailError = '<span style="color:red">Email invalid. Please check again</span>';
+      $emailError = '<div style="color:red">Email invalid. Please check again</div>';
       $errorsFound = true;
     }
     if (preg_match("#^(\\(04\\)|04|\\+614)( ?\\d){8}#", $_POST['cust']['mobile'])) {
       $mobile = $_POST['cust']['mobile'];
     } else {
-      $mobileError = '<span style="color:red">Mobile invalid. Please check again</span>';
+      $mobileError = '<div style="color:red">Mobile invalid. Please check again</div>';
       $errorsFound = true;
     }
     if (preg_match("#^\\d( ?\\d){14,19}#", $_POST['cust']['card'])) {
       $card = $_POST['cust']['card'];
     } else {
-      $cardError = '<span style="color:red">Card invalid. Please check again</span>';
+      $cardError = '<div style="color:red">Card invalid. Please check again</div>';
       $errorsFound = true;
     }
     if($_POST['cust']['expiry'] != date("Y-m")) {
       $expiry = $_POST['cust']['expiry'];
     } else {
-      $expiryError = '<span style="color:red">Expiry cannot be at the same month this year</span>';
+      $expiryError = '<div style="color:red">Expiry cannot be at the same month this year</div>';
       $errorsFound = true;
     }
 
