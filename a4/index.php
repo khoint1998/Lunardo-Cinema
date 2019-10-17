@@ -1,7 +1,6 @@
 <?php
   include_once('./tools.php');
   $message='';
-  $storage = '';
   $nameError = '';
   $emailError = '';
   $mobileError = '';
@@ -422,7 +421,7 @@
   };
 
   var date = new Date();
-  var state = document.getElementById("now-showing");
+  var state = document.getElementById("now-showing").innerHTML;
 
   function showSynopsis(sw){
     removeContentById('now-showing');
@@ -639,7 +638,7 @@
         </fieldset>
       </div>
       <input type="hidden" name="movie[id]" id="input-movie-id" value="">
-      <input type="hidden" name="state" id="state" value="">
+      <input type="hidden" name="state" id="state" value="`+state+`">
       <input type="hidden" name="movie[day]" id="input-movie-day" value="">
       <input type="hidden" name="movie[hour]" id="input-movie-hour" value="">
       <div class="form-section">
